@@ -44,6 +44,9 @@ export default defineConfig({
           'voice-presentation',
           'business-contact',
           'database',
+          'manager',
+          'audio-file',
+          'conference-call', 'diploma-1', 'multiple-devices', 'briefcase'
         ],
       },
     }),

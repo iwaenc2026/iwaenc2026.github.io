@@ -1,6 +1,6 @@
 site:
   name: IWAENC 2026
-  site: 'https://astrowind.vercel.app'
+  site: 'https://iwaenc2026.org/'
   base: '/'
   trailingSlash: false
 
@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: IWAENC 2026
-    template: '%s — AstroWind'
+    template: '%s — IWAENC26'
   description: "\U0001F680 International Workshop on Acoustic Signal Enhancement."
   robots:
     index: true

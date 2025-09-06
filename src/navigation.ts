@@ -24,69 +24,46 @@ export const headerData = {
         },
       ],*/
     },
+    {
+      text: 'Workshop',
+      links: [
+        {
+          text: 'Organizing Committee',
+          href: getPermalink('/workshop/committee'),
+        },
+        {
+          text: 'Previous IWAENCs',
+          href: 'https://www.iwaenc.org/proceedings.html',
+        },
+      ],
+    },
+    {
+      text: 'Calls and Submissions',
+      links: [
+        {
+          text: 'Call for Papers',
+          href: getPermalink('/landing/cfp'),
+        },
+      ],
+    },
+    {
+      text: 'Local Information',
+      links: [
+        {
+          text: 'Accommodation',
+          href: getPermalink('/localinfo/accommodation'),
+        },
+        {
+          text: 'About Cremona',
+          href: getPermalink('/localinfo/aboutcr'),
+        },
+        {
+          text: 'Travel Information',
+          href: getPermalink('/localinfo/travel'),
+        },
+      ],
+    },
     /*{
-      text: 'Pages',
-      links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
-    },
-    {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
-    },
-    {
       text: 'Blog',
       links: [
         {
@@ -112,8 +89,8 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Local Information',
+      href: getPermalink('localinfo', 'local'),
     },*/
   ],
   // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
@@ -121,50 +98,27 @@ export const headerData = {
 
 export const footerData = {
   links: [
-    /*{
-      title: 'Product',
+    {
+      title: 'Workshop',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Organizing Committee', href: '/workshop/committee' },
+        { text: 'Previous IWAENCs', href: 'https://www.iwaenc.org/proceedings.html' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Calls and Submissions',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Call for Papers', href: '/landing/cfp' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Local Information',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Accommodation', href: '/localinfo/accommodation' },
+        { text: 'About Cremona', href: '/localinfo/aboutcr' },
+        { text: 'Travel Information', href: '/localinfo/travel' },
       ],
     },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },*/
   ],
   secondaryLinks: [
     /*{ text: 'Terms', href: getPermalink('/terms') },

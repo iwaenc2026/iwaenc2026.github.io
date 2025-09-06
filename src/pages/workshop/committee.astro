@@ -1,0 +1,89 @@
+---
+import Hero from '../../components/widgets/Hero.astro';
+import Features2 from "../../components/widgets/Features2.astro";
+import Layout from '../../layouts/PageLayout.astro';
+
+const metadata = {
+    title: 'Organizing Committe',
+};
+---
+<Layout metadata={metadata}>
+
+<!-- Features2 Widget ************** -->
+<Features2
+        title="Organizing Committee"
+        subtitle=""
+        tagline="Meet the"
+        columns={2}
+        items={[
+            {
+                title: 'General Chairs',
+                description: "Fabio Antonacci (Politecnico di Milano, Italy) <br>" +
+                    "Augusto Sarti (Politecnico di Milano, Italy)",
+                icon: 'flat-color-icons:manager',
+            },
+            {
+                title: 'Technical Program Chairs',
+                description:
+                    "Jingdong Chen (Northwestern Polytechnic University, China) <br>" +
+                    "Ryan Corey (University of Illinois Chicago, USA) <br>" +
+                    "Sharon Gannot (Bar-Ilan University, Ramat Gan, Israel)",
+                icon: 'flat-color-icons:advertising',
+            },
+            {
+                title: 'Industry Liaison Chairs',
+                description: "Ivan Tashev (Microsoft Research, Redmond, USA) <br>" +
+                    "Jan Skoglund (Google Research, USA)",
+                icon: 'flat-color-icons:briefcase',
+            },
+            {
+                title: 'Plenary Lectures Chair',
+                description:
+                    "Shoichi Koyama (National Institute of Informatics, Tokyo, Japan)",
+                icon: 'flat-color-icons:voice-presentation',
+            },
+            {
+                title: 'Award Chair',
+                description:
+                    'Walter Kellermann (University of Erlangen-Nuremberg, Germany)',
+                icon: 'flat-color-icons:diploma-1',
+            },
+            {
+                title: 'Overseas Liaisons Chair',
+                description: 'Shoji Makino (Waseda University, Japan)',
+                icon: 'flat-color-icons:currency-exchange',
+            },
+            {
+                title: 'Publication & Publicity Chair',
+                description: 'Alberto Bernardini (Politecnico di Milano, Italy)',
+                icon: 'flat-color-icons:document',
+            },
+            {
+                title: 'Satellite Workshops & Special Sessions Chair',
+                description:
+                    'Mirco Pezzoli (Politecnico di Milano, Italy)',
+                icon: 'flat-color-icons:business-contact',
+            },
+            {
+                title: 'Demo Chair',
+                description: 'Federico Miotello (Politecnico di Milano, Italy)',
+                icon: 'flat-color-icons:multiple-devices',
+            },
+            {
+                title: 'Social & Student Activities Chair',
+                description: 'Riccardo Giampiccolo (Politecnico di Milano, Italy)',
+                icon: 'flat-color-icons:conference-call',
+            },
+            {
+                title: 'Finance Chair',
+                description: 'Fabrizio Grando (BBV Gastaldi, Italy)',
+                icon: 'flat-color-icons:currency-exchange',
+            },
+        ]}
+>
+    <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+</Features2>
+
+</Layout>

@@ -1,0 +1,247 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+
+const metadata = {
+  title: 'Calls and Submissions',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Calls and Submissions"
+    title="Call for Papers"
+    subtitle="The 19th International Workshop on Acoustic Signal Enhancement (IWAENC 2026) will be held in Cremona, Italy from Sept. 7 to Sept. 10, 2026. Since its first edition held in Berlin, Germany, in September 1989, it evolved into one of the leading workshops for theoretical and practical aspects related to speech and acoustic signal acquisition and processing. At its technical core, the three-day program offers keynote lectures, oral and poster presentations, and demonstrations."
+    actions={[
+      { variant: 'primary', text: 'Download it!', href: 'https://raw.githubusercontent.com/iwaenc2026/iwaenc2026.github.io/main/cfp_IWAENC_2026.pdf', icon: 'tabler:square-rounded-arrow-right' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1677967062535-439052f9c295?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: "Cremona's church",
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+  <Features2
+      title="Scope"
+      subtitle=""
+      tagline="IWAENC's"
+      columns={1}
+      items={[
+        {
+          title: '',
+          description: 'This workshop focuses on new methods and systems for enhancing and processing speech and audio signals. Applications include mobile and ambient communication, audio-visual conferencing systems, voice control systems, hearing devices, interactive TV, robot audition, smart acoustic environments, and emerging applications in audio and acoustic signal processing.',
+          icon: '',
+        },
+      ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+      id="features"
+      tagline="Discover the"
+      title="Topics"
+      columns={2}
+      subtitle="For all topics listed below, both model-based and data-driven methods and algorithms are welcome."
+      items={[
+        {
+          title: 'Acoustic echo and feedback suppression',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Noise reduction',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Microphone array processing',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Source localization and tracking',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speaker separation, extraction and diarization',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Dereverberation',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Active noise control',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Robot audition',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speech and audio coding',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Acoustic sensor networks',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Acoustic event detection and scene classification',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Spatial audio recording and reproduction',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Modelling, analysis and synthesis of acoustic environments',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Auditory modelling and hearing instruments',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Datasets for speech and audio',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Quality and intelligibility assessment',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'New and emerging topics in speech and audio processing',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Multimodal speech and audio processing, including audio-video, audio-EEG, etc.',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speech analysis: activity detection, overlapping speech detection, emotion recognition, etc.',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speech intelligibility enhancement',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+      ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+  <Features2
+      title="IWAENC 2026"
+      subtitle=""
+      tagline="More on"
+      columns={3}
+      items={[
+        {
+          title: 'Special Sessions',
+          description: 'The Organizing Committee solicits proposals for special sessions within the technical scope of the\n' +
+              'workshop. Special session proposals should include the session title, rationale, titles and abstracts of at\n' +
+              'least 6 invited papers as well as a short biography of the special session organizer(s), including the\n' +
+              'affiliation, address, and email.',
+          icon: '',
+        },
+        {
+          title: 'Demonstration Sessions',
+          description: 'Besides the regular paper presentations, a separate demonstration session is planned. For a contribution to this session, a brief description of the demonstration should be submitted via the call for demonstrations page. The description will not be included in the workshop proceedings.',
+          icon: '',
+        },
+        {
+          title: 'Best Student Award',
+          description: 'The IWAENC Technical Committee will award a “Best Student Paper Award”. The selection will be based on originality, scientific merit, and quality of writing and presentation. The paper must be presented by the candidate student to qualify for the award.',
+          icon: '',
+        },
+      ]}
+  >
+  </Features2>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+      title="Important Deadlines"
+      tagline="Note down the"
+      isReversed={true}
+      items={[
+        {
+          title: 'Feb. 27, 2026: special session proposals',
+          icon: 'tabler:number-1',
+        },
+        {
+          title: 'Mar. 9, 2026: submission system opens',
+          icon: 'tabler:number-2',
+        },
+        {
+          title: 'Apr. 24, 2026: regular papers submission',
+          icon: 'tabler:number-3',
+        },
+        {
+          title: 'Apr. 30, 2026: revision of uploaded papers',
+          icon: 'tabler:number-4',
+        },
+        {
+          title: 'Jul. 3, 2026: notification of acceptance',
+          icon: 'tabler:number-5',
+        },
+        {
+          title: 'Jul. 24, 2026: upload of camera-ready papers',
+          icon: 'tabler:number-6',
+        },
+        {
+          title: 'Jul. 24, 2026: early registration',
+          icon: 'tabler:number-7',
+        },
+      ]}
+      image={{
+        src: 'https://images.unsplash.com/photo-1585340609407-effd320e125f?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        alt: 'Cremona',
+      }}
+  />
+
+  <!--
+  <CallToAction
+    title="To be added"
+    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Download Template',
+        href: 'https://github.com/arthelokyo/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  /> -->
+</Layout>

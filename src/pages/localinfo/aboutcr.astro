@@ -1,0 +1,237 @@
+---
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+
+const metadata = {
+    title: 'Local Information',
+};
+---
+
+<Layout metadata={metadata}>
+    <!-- Hero Widget ******************* -->
+
+    <Hero
+            tagline="About Cremona"
+            image={{
+                src: 'https://images.unsplash.com/photo-1547748796-f3279852175f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alt: 'Museo del Violino',
+            }}
+    >
+        <Fragment slot="title">
+            <br />
+            <span class="text-accent dark:text-white"> 🎻 Welcome to Cremona, Italy 🎻 </span>
+        </Fragment>
+
+        <Fragment slot="subtitle">
+            Cremona is a charming city in northern Italy, renowned for its rich cultural heritage, elegant architecture, and deep musical traditions. Nestled along the banks of the Po River, it offers a perfect blend of history, innovation, and hospitality.
+            The city is world-famous as the birthplace of master violin makers such as Antonio Stradivari, and its legacy lives on in the Violin Museum and numerous artisan workshops. Visitors can stroll through the picturesque historic center, admire the stunning Romanesque Cathedral and the soaring Torrazzo bell tower, or enjoy a coffee in one of the lively piazzas.
+            Cremona is also a hub of culinary excellence, offering traditional Lombard cuisine and fine wines in cozy trattorias and modern restaurants. With excellent transport connections to Milano and other major cities, Cremona combines accessibility with a peaceful, inspiring atmosphere.
+            Whether you're here to exchange ideas, build collaborations, or simply soak in the beauty of Italian culture, Cremona will welcome you with open arms and unforgettable experiences.
+        </Fragment>
+    </Hero>
+
+    <!-- Stats Widget
+
+    <Stats
+            title="Statistics about us"
+            stats={[
+                { title: 'Offices', amount: '4' },
+                { title: 'Employees', amount: '248' },
+                { title: 'Templates', amount: '12' },
+                { title: 'Awards', amount: '24' },
+            ]}
+    /> ****************** -->
+
+    <!-- Features3 Widget
+
+    <Features3
+            title="Our templates"
+            subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+            columns={3}
+            isBeforeContent={true}
+            items={[
+                {
+                    title: 'Educational',
+                    description:
+                        'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
+                    icon: 'tabler:template',
+                },
+                {
+                    title: 'Interior Design',
+                    description:
+                        'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
+                    icon: 'tabler:template',
+                },
+                {
+                    title: 'Photography',
+                    description:
+                        'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+                    icon: 'tabler:template',
+                },
+            ]}
+    /> ************** -->
+
+    <!-- Features3 Widget
+
+    <Features3
+            columns={3}
+            isAfterContent={true}
+            items={[
+                {
+                    title: 'E-commerce',
+                    description:
+                        'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
+                    icon: 'tabler:template',
+                },
+                {
+                    title: 'Blog',
+                    description:
+                        'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
+                    icon: 'tabler:template',
+                },
+                {
+                    title: 'Business',
+                    description:
+                        'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
+                    icon: 'tabler:template',
+                },
+                {
+                    title: 'Branding',
+                    description:
+                        'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
+                    icon: 'tabler:template',
+                },
+                {
+                    title: 'Medical',
+                    description:
+                        'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
+                    icon: 'tabler:template',
+                },
+                {
+                    title: 'Fashion Design',
+                    description:
+                        'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
+                    icon: 'tabler:template',
+                },
+            ]}
+            image={{
+                src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+                alt: 'Colorful Image',
+            }}
+    /> ************** -->
+
+    <!-- Steps2 Widget
+
+    <Steps2
+            title="Our values"
+            subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+            items={[
+                {
+                    title: 'Customer-centric approach',
+                    description:
+                        'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+                },
+                {
+                    title: 'Constant Improvement',
+                    description:
+                        'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+                },
+                {
+                    title: 'Ethical Practices',
+                    description:
+                        'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+                },
+            ]}
+    /> ****************** -->
+
+    <!-- Steps2 Widget
+
+    <Steps2
+            title="Achievements"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+            isReversed={true}
+            callToAction={{
+                text: 'See more',
+                href: '/',
+            }}
+            items={[
+                {
+                    title: 'Global reach',
+                    description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+                    icon: 'tabler:globe',
+                },
+                {
+                    title: 'Positive customer feedback and reviews',
+                    description:
+                        'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+                    icon: 'tabler:message-star',
+                },
+                {
+                    title: 'Awards and recognition as industry experts',
+                    description:
+                        'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+                    icon: 'tabler:award',
+                },
+            ]}
+    /> ****************** -->
+
+    <!-- Features2 Widget
+
+    <Features2
+            title="Hotels in Cremona"
+            tagline="Suggested"
+            columns={3}
+            items={[
+                {
+                    title: 'B&B Hotel Cremona***',
+                    description: 'Distance from Campus: 2.3 km <br> <a href="https://www.hotel-bb.com/it/hotel/cremona?utm_source=google&utm_medium=cpc&utm_campaign=IT_goo_Brand_Hotel&gad_source=1&gad_campaignid=19808156836&gclid=Cj0KCQjwzt_FBhCEARIsAJGFWVk36-VqBZ4VoZzMMJeRMc4KncX2KM83A0U3EbZddfTj_AWK_nxCNcYaAkwtEALw_wcB">🏨️Hotel Website</a>',
+                },
+                {
+                    title: 'Hotel della Arti Cremona****S',
+                    description: 'Distance from Campus: 1.2 km <br> <a href="https://www.cremonahotels.it">🏨️Hotel Website</a>',
+                },
+                {
+                    title: 'Continental Hotel Cremona****',
+                    description: 'Distance from Campus: 1.5 km <br> <a href="https://www.cremonahotels.it">🏨️Hotel Website</a>',
+                },
+                {
+                    title: 'Hotel Impero Cremona****',
+                    description: 'Distance from Campus: 850 m <br> <a href="https://www.cremonahotels.it">🏨️Hotel Website</a>',
+                },
+                {
+                    title: 'Hotel Astoria Cremona***',
+                    description: 'Distance from Campus: 850 m <br> <a href="https://www.cremonahotels.it">🏨️Hotel Website</a>',
+                },
+                {
+                    title: 'Cremona Palace****',
+                    description: 'Distance from Campus: 6.6 km <br> <a href="https://www.cremonapalacehotel.it">🏨️Hotel Website</a>',
+                },
+            ]}
+    /> ************** -->
+
+    <!-- Features2 Widget
+
+    <Features2
+            title="Technical Support"
+            tagline="Contact us"
+            columns={2}
+            items={[
+                {
+                    title: 'Chat with us',
+                    description:
+                        'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
+                    icon: 'tabler:messages',
+                },
+                {
+                    title: 'Call us',
+                    description:
+                        'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
+                    icon: 'tabler:headset',
+                },
+            ]}
+    /> ************** -->
+</Layout>
