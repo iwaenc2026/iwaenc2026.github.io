@@ -1,0 +1,220 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+
+const metadata = {
+  title: 'Calls and Submissions',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Calls and Submissions"
+    title="Call for Special Sessions"
+    subtitle="IWAENC has an excellent track record over the years for organizing Special Sessions in new or emerging areas. This year, we are once again seeking innovative, high-quality and potentially interdisciplinary proposals for Special Sessions that complement the regular program of the conference. Special Sessions should be focused and provide both an overview of the state-of-the-art, as well as highlight the most promising research directions, trends and challenges in the proposed field of acoustic and speech signal processing."
+    actions={[
+      { variant: 'primary', text: 'Download it!', href: 'https://raw.githubusercontent.com/iwaenc2026/iwaenc2026.github.io/main/cfss_IWAENC_2026.pdf', icon: 'tabler:square-rounded-arrow-right' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1647167452643-e5460914b3cd?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: "Cremona's clock tower",
+    }}
+  />
+
+
+  <!-- Features Widget *************** -->
+
+  <Features
+      id="features"
+      tagline="Discover the"
+      title="Topics of the Special Sessions"
+      columns={2}
+      subtitle="The organizing committee solicits proposals for special sessions within the following technical scopes of the conference. For all topics listed below, both model-based and data-driven methods and algorithms are welcome."
+      items={[
+        {
+          title: 'Acoustic echo and feedback suppression',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Noise reduction',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Microphone array processing',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Source localization and tracking',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speaker separation, extraction and diarization',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Dereverberation',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Active noise control',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Robot audition',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speech and audio coding',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Acoustic sensor networks',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Acoustic event detection and scene classification',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Spatial audio recording and reproduction',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Modelling, analysis and synthesis of acoustic environments',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Auditory modelling and hearing instruments',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Datasets for speech and audio',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Quality and intelligibility assessment',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'New and emerging topics in speech and audio processing',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Multimodal speech and audio processing, including audio-video, audio-EEG, etc.',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speech analysis: activity detection, overlapping speech detection, emotion recognition, etc.',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speech intelligibility enhancement',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+      ]}
+  />
+
+
+<!-- Features2 Widget ************** -->
+<Features2
+        title="Proposal Submission"
+        subtitle=""
+        tagline="More on"
+        columns={1}
+        items={[
+            {
+                title: '',
+                description: 'Special session proposals should include: <br><br>  • <b>session title</b>, <br> ' +
+                    '• <b>rationale of the need for the special session</b>, <br> ' +
+                    '• <b>titles and abstracts of at least 6 invited papers</b>, <br> ' +
+                    '• <b>short biography of the special session organizer(s), including the affiliation, address, and email.</b> <br><br>  ' +
+                    ' Proposals will be evaluated based on the timeliness and attractiveness of the topic, organizing committee\n' +
+                    'qualifications, as well as the proposed list of contributed papers.\n' +
+                    'Papers submitted for special sessions are reviewed via the same exact process as submissions to the regular\n' +
+                    'program. In case a paper in special sessions does not meet the expected quality, it will be rejected. For special sessions\n' +
+                    'that are somewhat undersubscribed (due to paper rejections or limited number of submissions), an effort will be made\n' +
+                    'to identify regular submission papers to complete the session, as deemed appropriate by the conference organizers.\n' +
+                    'If a special session is seriously undersubscribed the special session may be canceled, in which case the accepted\n' +
+                    'papers from the canceled special session will be placed into the regular program.\n' +
+                    'Special session will be organized within the regular poster sessions. <br><br>' +
+                    '<b>Proposals (in pdf and not to exceed 4 pages) should be sent via e-mail to the special session chair:<br>' +
+                    'Mirco Pezzoli (mirco.pezzoli@polimi.it)</b>',
+                icon: '',
+            },
+        ]}
+>
+    <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+</Features2>
+
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+      title="Important Deadlines"
+      tagline="Note down the"
+      isReversed={true}
+      items={[
+        {
+          title: 'Feb. 27, 2026: special session proposals',
+          icon: 'tabler:number-1',
+        },
+        {
+          title: 'Mar. 20, 2026: notification of acceptance',
+          icon: 'tabler:number-2',
+        },
+        {
+          title: 'Apr. 24, 2026: regular papers submission (same as regular papers)',
+          icon: 'tabler:number-3',
+        },
+      ]}
+      image={{
+        src: 'https://images.unsplash.com/photo-1650540378411-8f62dacfeccc?q=80&w=955&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        alt: 'Cremona',
+      }}
+  />
+
+  <!--
+  <CallToAction
+    title="To be added"
+    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Download Template',
+        href: 'https://github.com/arthelokyo/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  /> -->
+</Layout>

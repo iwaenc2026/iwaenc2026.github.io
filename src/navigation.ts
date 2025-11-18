@@ -44,6 +44,10 @@ export const headerData = {
           text: 'Call for Papers',
           href: getPermalink('/landing/cfp'),
         },
+        {
+          text: 'Call for Special Sessions',
+          href: getPermalink('/landing/cfss'),
+        },
       ],
     },
     {
@@ -109,6 +113,7 @@ export const footerData = {
       title: 'Calls and Submissions',
       links: [
         { text: 'Call for Papers', href: '/landing/cfp' },
+        { text: 'Call for Special Sessions', href: '/landing/cfss' },
       ],
     },
     {
