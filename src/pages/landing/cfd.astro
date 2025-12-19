@@ -1,0 +1,111 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+
+const metadata = {
+    title: 'Calls and Submissions',
+};
+---
+
+<Layout metadata={metadata}>
+    <!-- Hero2 Widget ******************* -->
+
+    <Hero
+            tagline="Calls and Submissions"
+            title="Call for Demo"
+            subtitle="The 19th International Workshop on Acoustic Signal Enhancement (IWAENC 2026) will host a dedicated demonstration session featuring innovative and interactive systems in acoustic, speech, and audio signal processing. Demonstrations have long been a valued component of IWAENC, offering contributors a venue to present working prototypes, software tools, hardware setups, and real-time implementations that extend beyond traditional paper presentations. The session will adopt a Show-and-Tell format, emphasizing live, interactive and hands-on demonstrations. The organizing committee welcomes demonstration proposals within all areas in the technical scope of IWAENC 2026."
+            actions={[
+                { variant: 'primary', text: 'Download it!', href: 'https://raw.githubusercontent.com/iwaenc2026/iwaenc2026.github.io/main/cfd_IWAENC_2026.pdf', icon: 'tabler:square-rounded-arrow-right' },
+            ]}
+            image={{
+                src: 'https://images.unsplash.com/photo-1701907412099-2148ea531af1?q=80&w=2156&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alt: "Demo",
+            }}
+    />
+
+
+    <!-- Features2 Widget ************** -->
+    <Features2
+            title="Demo Submission"
+            subtitle=""
+            tagline="More on"
+            columns={1}
+            items={[
+                {
+                    title: '',
+                    description: 'Demo proposals (2 pages, IWAENC paper kit) should include: <br><br>  • <b>Title of the demonstration</b>; <br> ' +
+                        '• <b>Author names and affiliations</b>; <br> ' +
+                        '• <b>A detailed description of the contribution to be demonstrated, clearly outlining the scope and nature of\n' +
+                        'the demo. This should include an overview of the system, the application domain and problems addressed,\n' +
+                        'and the added value of the demonstration. Authors are encouraged to emphasize the novel elements,\n' +
+                        'integrated algorithms, and interactive features of the system</b>; <br> ' +
+                        '• <b>Technical requirements. Please be aware that authors are responsible for bringing all equipment needed\n' +
+                        'for their demonstration. Each demonstrator will be provided with a table and power outlets, monitors and\n' +
+                        'poster boards can be provided upon advance request. For audio-related demos, the use of high-quality\n' +
+                        'headphones is strongly recommended. Any additional constraints should be detailed on a separate\n' +
+                        'additional page of the proposal</b>; <br>' +
+                        '• <b>(Optional) Authors may also include a short trailer video (30 seconds to 1 minute) by providing a link\n' +
+                        '(e.g., to a private YouTube video or a shared drive) in the submitted proposal</b>; <br>' +
+                        '• <b>If the demonstration is related to a paper submitted to IWAENC, authors should specify the corresponding\n' +
+                        'paper ID.</b> <br><br>' +
+                        ' Please note that the demo proposals will not be included in the workshop proceedings.\n' +
+                        'All proposals should be uploaded online via the conference submission system and will be evaluated through a single-blind review process.\n' +
+                        'Authors will be notified of the review decision by email and through the conference\n' +
+                        'platform by the specified deadline. Evaluation will consider relevance to IWAENC 2026 technical scope, originality\n' +
+                        'and technical quality, level of development of the demonstration, and its potential for an effective public\n' +
+                        'interaction. Demonstrations are to be presented in person, with at least one author per accepted demo required\n' +
+                        'to register for the conference. <br><br>' +
+                        '<b> For any inquiries, please contact the Demo Chair: Federico Miotello (federico.miotello@polimi.it).</b>',
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+
+    <!-- Steps Widget ****************** -->
+
+    <Steps
+            title="Important Deadlines"
+            tagline="Note down the"
+            isReversed={true}
+            items={[
+                {
+                    title: 'Jun. 1, 2026: demo proposals submission deadline',
+                    icon: 'tabler:number-1',
+                },
+                {
+                    title: 'Jul. 1, 2026: notification of acceptance',
+                    icon: 'tabler:number-2',
+                },
+            ]}
+            image={{
+                src: 'https://images.unsplash.com/photo-1676988103073-70c2bf4c75c1?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alt: 'Demo',
+            }}
+    />
+
+    <!--
+    <CallToAction
+      title="To be added"
+      subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Download Template',
+          href: 'https://github.com/arthelokyo/astrowind',
+          icon: 'tabler:download',
+        },
+      ]}
+    /> -->
+</Layout>
