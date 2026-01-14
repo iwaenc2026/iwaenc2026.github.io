@@ -1,0 +1,53 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+
+const metadata = {
+    title: 'Calls and Submissions',
+};
+---
+
+<Layout metadata={metadata}>
+    <!-- Hero2 Widget ******************* -->
+
+    <Hero
+            tagline="Calls and Submissions"
+            title="Paper Submission"
+            subtitle=" "
+            actions={[
+                { variant: 'primary', text: 'Submit your paper here!', href: '', icon: 'tabler:square-rounded-arrow-right' },
+            ]}
+            image={{
+                src: '',
+                alt: "Demo",
+            }}
+    />
+
+
+    <!-- Features2 Widget ************** -->
+    <Features2
+            title="Paper Submission"
+            subtitle=""
+            tagline="More on"
+            columns={1}
+            items={[
+                {
+                    title: '',
+                    description: 'The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.',
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+</Layout>
