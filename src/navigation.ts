@@ -52,6 +52,10 @@ export const headerData = {
           text: 'Call for Demonstrations',
           href: getPermalink('/landing/cfd'),
         },
+        {
+          text: 'Call for Sponsors',
+          href: getPermalink('/landing/cfs'),
+        },
       ],
     },
     {
@@ -105,6 +109,7 @@ export const headerData = {
 };
 
 export const footerData = {
+  image: [],
   links: [
     {
       title: 'Workshop',
@@ -119,6 +124,7 @@ export const footerData = {
         { text: 'Call for Papers', href: '/landing/cfp' },
         { text: 'Call for Special Sessions', href: '/landing/cfss' },
         { text: 'Call for Demonstrations', href: '/landing/cfd' },
+        { text: 'Call for Sponsors', href: '/landing/cfs' },
       ],
     },
     {

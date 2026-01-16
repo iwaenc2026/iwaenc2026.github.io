@@ -1,0 +1,144 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+import Prices from "../../components/widgets/Pricing.astro";
+import CallToAction from "../../components/widgets/CallToAction.astro";
+
+const metadata = {
+    title: 'Calls and Submissions',
+};
+---
+
+<Layout metadata={metadata}>
+    <!-- Hero2 Widget ******************* -->
+
+    <Hero
+            tagline="Calls and Submissions"
+            title="Call for Sponsors"
+            subtitle="The 19th International Workshop on Acoustic Signal Enhancement (IWAENC 2026) is seeking sponsors. The three-day program will feature keynote lectures, oral and poster presentations, and demonstrations. IWAENC focuses on innovative methods and systems for enhancing and processing speech and audio signals. Applications include mobile and ambient communication, audio-visual conferencing systems, voice control systems, hearing devices, interactive TV, robot audition, smart acoustic environments, and emerging use cases in audio and acoustic signal processing."
+            actions={[
+                { variant: 'primary', text: 'Download it!', href: 'https://raw.githubusercontent.com/iwaenc2026/iwaenc2026.github.io/main/cfs_IWAENC_2026.pdf', icon: 'tabler:square-rounded-arrow-right' },
+            ]}
+            image={{
+                src: 'https://images.unsplash.com/photo-1515703944563-dbcfbf121b3d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alt: "Cremona",
+            }}
+    />
+
+
+    <Prices
+            title="Sponsorship"
+            subtitle='The Company logo will be included on the event website and on all the promotional materials. Other customized forms of participation may be considered subject to approval by the Organizing Committee through a negotiated process: \n <br> • Branding of the location where the dinners will be held;\n <br>• Provision of the conference kit, including shopper, notepad, and pen (200 pcs).\n'
+            tagline="Our three categories of"
+            prices={[
+                {
+                    title: 'Golden',
+                    subtitle: 'Sponsor',
+                    price: 6000,
+                    period: ' ',
+                    items: [
+                        {
+                            description: 'Logo: Yes',
+                        },
+                        {
+                            description: 'Exhibition Space: On Request',
+                        },
+                        {
+                            description: 'Free Registrations: 3',
+                        },
+                    ],
+                },
+                {
+                    title: 'Silver',
+                    subtitle: 'Sponsor',
+                    price: 4500,
+                    period: ' ',
+                    items: [
+                        {
+                            description: 'Logo: Yes',
+                        },
+                        {
+                            description: 'Exhibition Space: No',
+                        },
+                        {
+                            description: 'Free Registrations: 2',
+                        },
+                    ],
+                    //hasRibbon: true,
+                    //ribbonTitle: 'popular',
+                },
+                {
+                    title: 'Bronze',
+                    subtitle: 'Sponsor',
+                    price: 3000,
+                    period: ' ',
+                    items: [
+                        {
+                            description: 'Logo: Yes',
+                        },
+                        {
+                            description: 'Exhibition Space: No',
+                        },
+                        {
+                            description: 'Free Registrations: 1',
+                        },
+                    ],
+                },
+            ]}
+    />
+
+
+    <!-- Features2 Widget ************** -->
+    <Features2
+            title="Participation"
+            subtitle=""
+            tagline="Terms of"
+            columns={1}
+            items={[
+                {
+                    title: '',
+                    description: '• The booking of any sponsorship will be determined by the Organizing Secretariat based on the date of confirmation;\n <br>' +
+                        '• Payment terms: The total amount must be settled before the start of the event;\n <br>' +
+                        '• Acceptance and signing of the conditions indicated in this form are considered irrevocable. In case of breach of the ' +
+                        'obligations undertaken, BBV Gastaldi Events will apply a penalty equal to 100% of the total amount indicated in this ' +
+                        'signed form;\n <br>' +
+                        '• For all matters not covered in this contract, the applicable laws and regulations shall apply;\n <br>' +
+                        '• For the purposes of this contract, the parties agree to provide for reconciliation procedures, attempting an amicable ' +
+                        'resolution of any disputes arising between BBV Gastaldi Events Srl and the contracting party, as well as the evaluation ' +
+                        'of possible interpretative differences of this agreement. The parties accept the Court of Milan as the exclusive ' +
+                        'jurisdiction for any dispute.\n <br>',
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+    <CallToAction
+            title="Information and Contacts"
+            subtitle="The contract will be signed with: <br> <b> BBV GASTALDI EVENTS Srl <br> Piazza Luigi di Savoia, 22 – 20124 Milano (Italia) <br> P.IVA 05178360961 <br> SDI: XVBJ9YM </b> <br> BBV Gastaldi Events will issue the invoice for sponsorship."
+    />
+
+    <!--
+    <CallToAction
+      title="To be added"
+      subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Download Template',
+          href: 'https://github.com/arthelokyo/astrowind',
+          icon: 'tabler:download',
+        },
+      ]}
+    /> -->
+</Layout>
