@@ -137,6 +137,12 @@ export const footerData = {
       ],
     },
     {
+      title: 'Authors',
+      links: [
+        { text: 'Paper submission', href: '/landing/sub_tmp' },
+      ],
+    },
+    {
       title: 'Local Information',
       links: [
         { text: 'Accommodation', href: '/localinfo/accommodation' },
