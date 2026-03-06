@@ -59,6 +59,15 @@ export const headerData = {
       ],
     },
     {
+      text: 'Authors',
+      links: [
+        {
+          text: 'Paper submission',
+          href: getPermalink('/landing/sub'),
+        },
+      ],
+    },
+    {
       text: 'Local Information',
       links: [
         {
