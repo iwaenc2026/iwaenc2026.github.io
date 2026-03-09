@@ -63,7 +63,7 @@ export const headerData = {
       links: [
         {
           text: 'Paper submission',
-          href: getPermalink('/landing/sub_tmp'),
+          href: getPermalink('/landing/sub'),
         },
       ],
     },
