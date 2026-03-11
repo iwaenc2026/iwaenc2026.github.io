@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: IWAENC 2026
     images:
-      - url: '~/assets/images/default.png'
+      - url: 'https://raw.githubusercontent.com/iwaenc2026/iwaenc2026.github.io/main/public/banner.png'
         width: 1200
         height: 628
     type: website

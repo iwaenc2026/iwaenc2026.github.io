@@ -8,9 +8,10 @@ import Steps2 from '../../components/widgets/Steps2.astro';
 import Layout from '../../layouts/PageLayout.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from "../../components/widgets/Content.astro";
+import CallToAction from "../../components/widgets/CallToAction.astro";
 
 const metadata = {
-    title: 'Calls and Submissions',
+    title: 'Authors',
 };
 ---
 
@@ -18,13 +19,13 @@ const metadata = {
     <!-- Hero2 Widget ******************* -->
 
     <Hero
-            tagline="Calls and Submissions"
+            tagline="Authors"
             title="Paper Submission"
             subtitle="The 19th International Workshop on Acoustic Signal Enhancement (IWAENC 2026) invites the submission of original research papers in all technical areas related to acoustic echo cancellation, noise control, speech enhancement, array signal processing, and related topics. <br> All submissions will undergo peer review by experts in the field. Accepted and presented papers will be included in the workshop proceedings."
             actions={[
                 { variant: 'primary', text: 'Submit your paper here!', href: 'https://cmt3.research.microsoft.com/IWAENC2026', icon: 'tabler:square-rounded-arrow-right' },
-                { variant: 'primary', text: 'Latex template', href: 'https://www.overleaf.com/latex/templates/author-guidelines-for-iwaenc-2026-proceedings-manuscripts/nffbtbkqpspm', icon: 'tabler:square-rounded-arrow-right' },
-                { variant: 'primary', text: 'Word template', href: 'https://github.com/iwaenc2026/iwaenc2026.github.io/blob/ea592464caabaeb041dc35cf0a72df78ad971228/WordTemplateIWAENC2026.docx?raw=true', icon: 'tabler:square-rounded-arrow-right' },
+                // { variant: 'secondary', text: 'Latex template', href: 'https://www.overleaf.com/latex/templates/author-guidelines-for-iwaenc-2026-proceedings-manuscripts/nffbtbkqpspm', icon: 'tabler:square-rounded-arrow-right' },
+                // { variant: 'secondary', text: 'Word template', href: 'https://github.com/iwaenc2026/iwaenc2026.github.io/blob/ea592464caabaeb041dc35cf0a72df78ad971228/WordTemplateIWAENC2026.docx?raw=true', icon: 'tabler:square-rounded-arrow-right' },
             ]
             }
             image={{
@@ -81,6 +82,17 @@ const metadata = {
             <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
         </Fragment>
     </Features2>
+
+    <CallToAction
+            title="Download the Template"
+            subtitle="The following LaTex and Microsoft Word templates are available for users:"
+            href = 'https://www.overleaf.com/latex/templates/author-guidelines-for-iwaenc-2026-proceedings-manuscripts/nffbtbkqpspm'
+            actions={[
+                { variant: 'secondary', text: 'LaTex Template', href: 'https://www.overleaf.com/latex/templates/author-guidelines-for-iwaenc-2026-proceedings-manuscripts/nffbtbkqpspm', icon: 'tabler:square-rounded-arrow-right' },
+                { variant: 'secondary', text: 'Word Template', href: 'https://github.com/iwaenc2026/iwaenc2026.github.io/blob/ea592464caabaeb041dc35cf0a72df78ad971228/WordTemplateIWAENC2026.docx?raw=true', icon: 'tabler:square-rounded-arrow-right' },
+            ]
+            }
+    />
 
     <!-- Features2 Widget ************** -->
     <Features2
