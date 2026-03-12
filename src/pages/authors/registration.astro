@@ -1,0 +1,96 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '../../components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+import CallToAction from "../../components/widgets/CallToAction.astro";
+
+const metadata = {
+    title: 'Authors',
+};
+---
+
+<Layout metadata={metadata}>
+    <!-- Hero2 Widget ******************* -->
+
+    <Hero
+            tagline="Authors"
+            title="Registration"
+            subtitle="Information about the registration process will be provided soon."
+            actions={[
+            //    { variant: 'primary', text: 'Submit your paper here!', href: 'https://cmt3.research.microsoft.com/IWAENC2026', icon: 'tabler:square-rounded-arrow-right' },
+            ]
+            }
+            image={{
+                src: 'https://images.unsplash.com/photo-1647167452643-e5460914b3cd?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alt: "Cremona",
+            }}
+    />
+
+    <!-- Features2 Widget **************
+    <Features2
+            title="Instructions"
+            subtitle=""
+            tagline="More on"
+            columns={1}
+            items={[
+                {
+                    title: 'Paper format',
+                    description: 'Papers must be written in English. Submitted papers must consist of a maximum of four (4) pages of technical content, including all figures and tables. An optional fifth (5th) page containing references only is permitted. Papers must follow the official IEEE conference template (LaTeX or Word). Submissions must be in PDF format. ',
+                    icon: '',
+                },
+                {
+                    title: 'Review process',
+                    description: 'The review process is single-blind: reviewer identities are confidential, and author identities are visible to reviewers. Each submission will be reviewed by at least three (3) independent reviewers. Papers will be evaluated based on technical quality, originality, relevance to IWAENC, and clarity of presentation. Final decisions will be made by the Technical Program Committee.',
+                    icon: '',
+                },
+                {
+                    title: 'Originality and Submission Policy',
+                    description: 'Submitted papers must present original, unpublished work. Papers under review at other conferences or journals are not permitted. Submissions must comply with IEEE policies on plagiarism, ethical conduct, and publication standards. Authors are responsible for obtaining any necessary permissions for reproduced material.',
+                    icon: '',
+                },
+                {
+                    title: 'Policy on the Use of Generative AI',
+                    description: 'AI-based tools may be used for language editing and formatting assistance. AI systems must not be listed as authors. Authors are fully responsible for the accuracy, originality, and integrity of their submissions.',
+                    icon: '',
+                },
+                {
+                    title: 'Submission Portal',
+                    description: 'All papers must be submitted electronically through CMT (Conference Management Toolkit) at the following link: https://cmt3.research.microsoft.com/IWAENC2026. The submission portal may also be used to check submission status and upload revised versions, if applicable.',
+                    icon: '',
+                },
+                {
+                    title: 'Camera-Ready Submission (Accepted Papers Only)',
+                    description: 'Authors of accepted papers must address reviewers’ comments in the final version, submit a PDF compliant with IEEE formatting requirements, complete the IEEE electronic copyright form, and ensure that at least one author registers at the full workshop rate. Failure to present the paper at the workshop may result in removal from the proceedings.',
+                    icon: '',
+                },
+                {
+                    title: 'Proceedings',
+                    description: 'Accepted and presented papers will be included in the IWAENC 2026 Workshop Proceedings.',
+                    icon: '',
+                },
+              
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+    <CallToAction
+            title="Download the Template"
+            subtitle="The following LaTex and Microsoft Word templates are available for users:"
+            href = 'https://www.overleaf.com/latex/templates/author-guidelines-for-iwaenc-2026-proceedings-manuscripts/nffbtbkqpspm'
+            actions={[
+                { variant: 'secondary', text: 'LaTex Template', href: 'https://www.overleaf.com/latex/templates/author-guidelines-for-iwaenc-2026-proceedings-manuscripts/nffbtbkqpspm', icon: 'tabler:square-rounded-arrow-right' },
+                { variant: 'secondary', text: 'Word Template', href: 'https://github.com/iwaenc2026/iwaenc2026.github.io/blob/ea592464caabaeb041dc35cf0a72df78ad971228/WordTemplateIWAENC2026.docx?raw=true', icon: 'tabler:square-rounded-arrow-right' },
+            ]
+            }
+    />-->
+
+</Layout>

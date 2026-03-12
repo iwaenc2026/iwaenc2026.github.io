@@ -69,6 +69,10 @@ export const headerData = {
           text: 'Paper Submission',
           href: getPermalink('/authors/sub'),
         },
+        {
+          text: 'Registration',
+          href: getPermalink('/authors/registration'),
+        },
       ],
     },
     {
@@ -145,6 +149,7 @@ export const footerData = {
       title: 'Authors',
       links: [
         { text: 'Paper Submission', href: '/authors/sub' },
+        { text: 'Registration', href: '/authors/registration' },
       ],
     },
     {
