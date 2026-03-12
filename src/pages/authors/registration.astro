@@ -26,10 +26,22 @@ const metadata = {
             //    { variant: 'primary', text: 'Submit your paper here!', href: 'https://cmt3.research.microsoft.com/IWAENC2026', icon: 'tabler:square-rounded-arrow-right' },
             ]
             }
-            image={{
-                src: 'https://images.unsplash.com/photo-1647167452643-e5460914b3cd?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                alt: "Cremona",
-            }}
+            image={{ src: '~/assets/images/cremona_night.png', alt: 'Cremona' }}
+    />
+
+    <!-- Stats Widget ****************** -->
+
+    <Stats
+            title="Registration Fees"
+            subtitle= {'Early-bird registration ends on July 7, 2026. <br>' +
+             'From July 8, 2026, the full registration fee will apply'}
+            tagline="More on the"
+            stats={[
+                { title: 'Regular - Early-bird', amount: '630 €' },
+                { title: 'Student - Early-bird', amount: '400 €' },
+                { title: 'Regular', amount: '800 €' },
+                { title: 'Student', amount: '500 €' },
+            ]}
     />
 
     <!-- Features2 Widget **************
