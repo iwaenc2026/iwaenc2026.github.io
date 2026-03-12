@@ -22,8 +22,7 @@ const metadata = {
             }}
     >
         <Fragment slot="title">
-            <br />
-            <span class="text-accent dark:text-white">🛤️ How to reach Cremona 🛤️</span>
+            <span class="text-accent dark:text-white">How to reach Cremona</span>
         </Fragment>
 
         <Fragment slot="subtitle">
@@ -81,6 +80,33 @@ const metadata = {
                 },
             ]}
     />
+
+    <!-- Features2 Widget ************** -->
+    <Features2
+            title="Additional Service"
+            subtitle="Are you planning to attend Forum Acusticum Euronoise 2025 in Graz (Austria) after IWAENC 2026? Do you require assistance with your Cremona–Milan round-trip?"
+            tagline="Benefit from our"
+            columns={1}
+            items={[
+                {
+                    title: '',
+                    description:
+                        ' <ul> ' +
+                        ' A transfer service will be arranged betwen Milano Centrale Railway Station and Politecnico di Milano in Cremona on: ' +
+                        '    <li> • <b>September 6th, afternoon</b> - from Milano Centrale to Cremona; </li>'  +
+                        '    <li> • <b>September 7th, morning</b> - from Milano Centrale to Cremona; </li>' +
+                        '    <li> • <b>September 10th, before lunch</b> - from Cremona to Milano Centrale (for people who will attend <b><a href="https://www.fa-euronoise2025.org" >Forum Acusticum Euronoise 2025</a></b> in Graz); </li>' +
+                        '    <li> • <b>September 10th, after lunch</b> - from Cremona to Milano Centrale. </li> </ul> <br>' +
+                        '    The timetable of the available transfer services will be published here as soon as possible. <br>' +
+                        '    You will have the possibility to select the service on the registration form.',
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
 
     <!-- Features3 Widget
 

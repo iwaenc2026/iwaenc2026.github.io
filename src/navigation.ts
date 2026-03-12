@@ -32,6 +32,10 @@ export const headerData = {
           href: getPermalink('/workshop/committee'),
         },
         {
+          text: 'Venue',
+          href: 'https://www.polo-cremona.polimi.it/en/',
+        },
+        {
           text: 'Previous IWAENCs',
           href: 'https://www.iwaenc.org/proceedings.html',
         },
@@ -63,7 +67,7 @@ export const headerData = {
       links: [
         {
           text: 'Paper Submission',
-          href: getPermalink('/landing/sub'),
+          href: getPermalink('/authors/sub'),
         },
       ],
     },
@@ -124,6 +128,7 @@ export const footerData = {
       title: 'Workshop',
       links: [
         { text: 'Organizing Committee', href: '/workshop/committee' },
+        { text: 'Venue', href: 'https://www.polo-cremona.polimi.it/en/'},
         { text: 'Previous IWAENCs', href: 'https://www.iwaenc.org/proceedings.html' },
       ],
     },
@@ -139,7 +144,7 @@ export const footerData = {
     {
       title: 'Authors',
       links: [
-        { text: 'Paper Submission', href: '/landing/sub_tmp' },
+        { text: 'Paper Submission', href: '/authors/sub' },
       ],
     },
     {
