@@ -60,6 +60,10 @@ export const headerData = {
           text: 'Call for Sponsors',
           href: getPermalink('/landing/cfs'),
         },
+        {
+          text: 'Call for Workshop Proposals',
+          href: getPermalink('/landing/cfw'),
+        },
       ],
     },
     {
@@ -143,6 +147,7 @@ export const footerData = {
         { text: 'Call for Special Sessions', href: '/landing/cfss' },
         { text: 'Call for Demonstrations', href: '/landing/cfd' },
         { text: 'Call for Sponsors', href: '/landing/cfs' },
+        { text: 'Call for Workshop Proposals', href: '/landing/cfw' },
       ],
     },
     {

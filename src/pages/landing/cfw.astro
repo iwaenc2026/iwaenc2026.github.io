@@ -1,0 +1,211 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+
+const metadata = {
+  title: 'Calls and Submissions',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Calls and Submissions"
+    title="Call for Workshop Proposals"
+    subtitle="IWAENC 2026 will host a limited number of Satellite Workshops in conjunction with the main conference program. We invite proposals from interested researchers and research groups. Up to four workshops will be selected (two in the morning and two in the afternoon sessions). Workshops are intended to provide focused discussions on specific topics within the scope of acoustic and speech signal processing."
+    actions={[
+      { variant: 'primary', text: 'Download it!', href: 'https://raw.githubusercontent.com/iwaenc2026/iwaenc2026.github.io/main/cfw_IWAENC_2026.pdf', icon: 'tabler:square-rounded-arrow-right' },
+    ]}
+    image={{
+      src: 'https://www.polo-cremona.polimi.it/fileadmin/_processed_/f/d/csm_CR_HOME_81a5a5e053.jpg',
+      alt: "Venue",
+    }}
+  />
+
+
+  <!-- Features Widget *************** -->
+
+  <Features
+      id="features"
+      tagline="Discover the"
+      title="Topics of Interest"
+      columns={2}
+      subtitle="The organizing committee particularly encourages proposals linked to ongoing or recently completed research projects (e.g., national or European projects). For all topics listed below, both model-based and data-driven methods and algorithms are welcome."
+      items={[
+        {
+          title: 'Acoustic echo and feedback suppression',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Noise reduction',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Microphone array processing',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Source localization and tracking',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speaker separation, extraction and diarization',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Dereverberation',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Active noise control',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Robot audition',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speech and audio coding',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Acoustic sensor networks',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Acoustic event detection and scene classification',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Spatial audio recording and reproduction',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Modelling, analysis and synthesis of acoustic environments',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Auditory modelling and hearing instruments',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Datasets for speech and audio',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Quality and intelligibility assessment',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'New and emerging topics in speech and audio processing',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Multimodal speech and audio processing, including audio-video, audio-EEG, etc.',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speech analysis: activity detection, overlapping speech detection, emotion recognition, etc.',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Speech intelligibility enhancement',
+          description: '',
+          icon: 'tabler:bulb',
+        },
+      ]}
+  />
+
+
+<!-- Features2 Widget ************** -->
+<Features2
+        title="Proposal Submission"
+        subtitle=""
+        tagline="More on"
+        columns={1}
+        items={[
+            {
+                title: '',
+                description: 'Workshop proposals should include: <br><br>  • <b>Workshop title</b>, <br> ' +
+                    '• <b>Short description of the topic and scope</b>, <br> ' +
+                    '• <b>Proposed format (e.g., invited talks, contributed talks, discussion)</b>, <br> ' +
+                    '• <b>Indication of connection to research projects (if applicable)</b>, <br>  ' +
+                    '• <b>Expected number of participants.</b> <br><br>' +
+                    ' Workshops will be held during the conference. Standard room facilities will be provided by the organizing team. ' +
+                    'Workshops can be organized <b>free of charge</b>. Any additional services (e.g., coffee breaks, catering, or specific technical' +
+                    'requirements) can be arranged upon request after acceptance and may involve additional costs. <br><br>' +
+                    '<b>Proposals (in pdf and not to exceed 2 pages) should be sent via e-mail to the workshop chair:<br>' +
+                    'Mirco Pezzoli (mirco.pezzoli@polimi.it)</b>',
+                icon: '',
+            },
+        ]}
+>
+    <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+</Features2>
+
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+      title="Important Deadlines"
+      tagline="Note down the"
+      isReversed={true}
+      items={[
+        {
+          title: 'June 6, 2026: workshop proposal deadline',
+          icon: 'tabler:number-1',
+        },
+        {
+          title: 'June 9, 2026: notification of acceptance',
+          icon: 'tabler:number-2',
+        },
+      ]}
+      image={{
+        src: '~/assets/images/IMG_7954.JPG',
+        alt: 'Cremona',
+      }}
+  />
+
+  <!--
+  <CallToAction
+    title="To be added"
+    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Download Template',
+        href: 'https://github.com/arthelokyo/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  /> -->
+</Layout>
