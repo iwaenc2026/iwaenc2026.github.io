@@ -67,15 +67,6 @@ export const headerData = {
       ],
     },
     {
-      text: 'Attend',
-      links: [
-        {
-          text: 'Keynotes',
-          href: getPermalink('/attend/keynotes'),
-        },
-      ],
-    },
-    {
       text: 'Authors',
       links: [
         {
@@ -85,6 +76,15 @@ export const headerData = {
         {
           text: 'Registration',
           href: getPermalink('/authors/registration'),
+        },
+      ],
+    },
+    {
+      text: 'Attend',
+      links: [
+        {
+          text: 'Keynotes',
+          href: getPermalink('/attend/keynotes'),
         },
       ],
     },
@@ -160,16 +160,16 @@ export const footerData = {
       ],
     },
     {
-      title: 'Attend',
-      links: [
-        { text: 'Keynotes', href: '/attend/keynotes' },
-      ],
-    },
-    {
       title: 'Authors',
       links: [
         { text: 'Paper Submission', href: '/authors/sub' },
         { text: 'Registration', href: '/authors/registration' },
+      ],
+    },
+    {
+      title: 'Attend',
+      links: [
+        { text: 'Keynotes', href: '/attend/keynotes' },
       ],
     },
     {
