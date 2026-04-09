@@ -2,7 +2,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    {
+    {/*
       text: 'Home',
       href: getPermalink('/'),
       /*links: [
@@ -63,6 +63,15 @@ export const headerData = {
         {
           text: 'Call for Workshop Proposals',
           href: getPermalink('/landing/cfw'),
+        },
+      ],
+    },
+    {
+      text: 'Attend',
+      links: [
+        {
+          text: 'Keynotes',
+          href: getPermalink('/attend/keynotes'),
         },
       ],
     },
@@ -148,6 +157,12 @@ export const footerData = {
         { text: 'Call for Demonstrations', href: '/landing/cfd' },
         { text: 'Call for Sponsors', href: '/landing/cfs' },
         { text: 'Call for Workshop Proposals', href: '/landing/cfw' },
+      ],
+    },
+    {
+      title: 'Attend',
+      links: [
+        { text: 'Keynotes', href: '/attend/keynotes' },
       ],
     },
     {

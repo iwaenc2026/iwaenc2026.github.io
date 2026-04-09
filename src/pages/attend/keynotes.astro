@@ -1,0 +1,112 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from "../../components/widgets/Hero2.astro";
+
+const metadata = {
+  title: 'Keynotes',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+    <!---
+    <Features2
+            title="Title"
+            subtitle=""
+            tagline="Keynote"
+            columns={1}
+            items={[
+                {
+                    title: 'Abstract',
+                    description: '',
+                    icon: '',
+                },
+            ]}
+    >
+    </Features2>
+    --->
+
+    <Hero2
+            tagline="Keynote Speaker"
+            title="Prof. Boaz Rafaely"
+            subtitle="Boaz Rafaely is a Professor at Ben-Gurion University of the Negev in Israel, where he leads the Acoustics Laboratory, conducting research in spatial audio signal processing. He has published over 200 papers in journals and conferences, and is the author of the book Fundamentals of Spherical Array Processing. Prof. Rafaely has previously served as Head of the School of Electrical and Computer Engineering at BGU, Chair of the Israeli Acoustical Association, and Chair of the Technical Committee on Audio Signal Processing of the European Acoustical Association. He has also been an associate editor for IEEE Transactions on Audio, Speech and Language Processing, IEEE Signal Processing Letters, and Acta Acustica. He is an IEEE fellow."
+            ]}
+            image={{
+                src: '~/assets/images/br.png',
+                alt: 'Prof. Boaz Rafaely',
+            }}
+    />
+
+    <!---
+    <Features2
+            title="Title"
+            subtitle=""
+            tagline="Keynote"
+            columns={1}
+            items={[
+                {
+                    title: 'Abstract',
+                    description: '',
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+    --->
+    <Hero2
+            tagline="Keynote Speaker"
+            title="Prof. Mounya Elhilali"
+            subtitle="Mounya Elhilali received her Ph.D. degree in Electrical and Computer Engineering from the University of Maryland, College Park in 2004. She is the Charles Renn faculty scholar and professor of Electrical and Computer Engineering at the Johns Hopkins University, with joint appointment in the department of Psychology and Brain Sciences. She directs the Laboratory for Computational Audio Perception and is affiliated with the center for speech and language processing, the center for hearing and balance and the Kavli neuroscience institute. Her research examines sound processing by humans and machines in noisy soundscapes, and investigates reverse engineering intelligent processing of sounds by brain networks with applications to speech and audio technologies and medical diagnostic systems. Dr. Elhilali is the recipient of the National Science Foundation CAREER award and the Office of Naval Research Young Investigator award. She was recognized as outstanding woman innovator by the Johns Hopkins tech ventures in 2020."
+            ]}
+            image={{
+                src: '~/assets/images/me.jpg',
+                alt: 'Prof. Mounya Elhilali ',
+            }}
+    >
+
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Hero2>
+
+    <!---
+    <Features2
+            title="Language Queried Audio Source Separation"
+            subtitle=""
+            tagline="Keynote"
+            columns={1}
+            items={[
+                {
+                    title: 'Abstract',
+                    description: 'Large audio-language models (LALMs) are emerging as a powerful approach for addressing a broad range of audio signal processing problems, including generation, captioning, editing, and source separation. By integrating large language models (LLMs) with audio modeling techniques, they enable more flexible and intelligent audio systems. This talk focuses on language-queried audio source separation (LASS), a recently introduced framework that extracts desired sounds from an audio mixture using natural language queries. LASS offers an intuitive and scalable interface for applications such as automated editing, remixing, and audio rendering. We start by outlining the problem and its motivation, making a connection with conventional paradigms for speech and universal source separation. We then present two LASS methods: AudioSep and FlowSep. AudioSep is a text-driven model that uses query and separation networks to estimate time–frequency masks and extract target sounds. FlowSep is a generative approach based on rectified flow matching (RFM), modeling transitions from noise to target features in a variational autoencoder (VAE) latent space and reconstructing audio via a decoder and vocoder. We also present datasets, evaluation metrics, experimental results, and sound demos. Finally, we link source separation to audio editing and generation, highlighting recent advances (e.g. the RFM-Editing, AudioLDM, and AudioLDM2 models), and conclude the talk with future research directions in this evolving field.',
+                    icon: '',
+                },
+            ]}
+    >
+    </Features2>
+    --->
+
+    <Hero2
+            tagline="Keynote Speaker"
+            title="Prof. Wenwu Wang"
+            subtitle="Wenwu Wang is a Professor in Signal Processing and Machine Learning, and the Associate Head of External Engagement, School of Computer Science and Electronic Engineering, University of Surrey, UK. He is also a Core AI Fellow at the Surrey Institute for People Centred Artificial Intelligence. His current research interests include signal processing, machine learning/AI, and machine audition (listening). He has (co)-authored over 400 papers in these areas. His work has been recognized with more than 15 accolades, including the Meta Distinguished Faculty Award (2026), Audio Engineering Society Best Technical Paper Award (2025), IEEE Signal Processing Society Young Author Best Paper Award (2022), DCASE Judge’s Award (2020, 2023, and 2024), DCASE Reproducible System Award (2019 and 2020), and LVA/ICA Best Student Paper Award (2018). He has been elected to IEEE Fellow for contributions to audio classification, generation and source separation, since 2026. He has been an invited Keynote or Plenary Speaker on about 30 international conferences and workshops. More about his work can be found from his personal page: https://personalpages.surrey.ac.uk/w.wang/."
+            ]}
+            image={{
+                src: '~/assets/images/ww.jpg',
+                alt: 'Prof. Mounya Elhilali ',
+            }}
+    >
+    </Hero2>
+
+
+</Layout>
