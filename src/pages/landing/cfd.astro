@@ -8,6 +8,7 @@ import Steps2 from '../../components/widgets/Steps2.astro';
 import Layout from '../../layouts/PageLayout.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from "../../components/widgets/Content.astro";
+import CallToAction from "../../components/widgets/CallToAction.astro";
 
 const metadata = {
     title: 'Calls and Submissions',
@@ -23,6 +24,7 @@ const metadata = {
             subtitle="The 19th International Workshop on Acoustic Signal Enhancement (IWAENC 2026) will host a dedicated demonstration session featuring innovative and interactive systems in acoustic, speech, and audio signal processing. Demonstrations have long been a valued component of IWAENC, offering contributors a venue to present working prototypes, software tools, hardware setups, and real-time implementations that extend beyond traditional paper presentations. The session will adopt a Show-and-Tell format, emphasizing live, interactive and hands-on demonstrations. The organizing committee welcomes demonstration proposals within all areas in the technical scope of IWAENC 2026."
             actions={[
                 { variant: 'primary', text: 'Download it!', href: 'https://raw.githubusercontent.com/iwaenc2026/iwaenc2026.github.io/main/cfd_IWAENC_2026.pdf', icon: 'tabler:square-rounded-arrow-right' },
+                { variant: 'secondary', text: 'Submit your Demo!', href: 'https://cmt3.research.microsoft.com/IWAENC2026/Track/2/Submission/Create', icon: 'tabler:square-rounded-arrow-right' },
             ]}
             image={{
                 src: 'https://images.unsplash.com/photo-1701907412099-2148ea531af1?q=80&w=2156&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -72,6 +74,14 @@ const metadata = {
         </Fragment>
     </Features2>
 
+    <CallToAction
+            title="Submit your Demonstration"
+            subtitle="Please, click on the following button to submit your contribution."
+            actions={[
+                { variant: 'secondary', text: 'Submit it here!', href: 'https://cmt3.research.microsoft.com/IWAENC2026/Track/2/Submission/Create', icon: 'tabler:square-rounded-arrow-right' },
+            ]
+            }
+    />
 
     <!-- Steps Widget ****************** -->
 
@@ -94,6 +104,7 @@ const metadata = {
                 alt: 'Demo',
             }}
     />
+
 
     <!--
     <CallToAction
