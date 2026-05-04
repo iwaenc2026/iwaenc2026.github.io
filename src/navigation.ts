@@ -36,6 +36,10 @@ export const headerData = {
           href: 'https://www.polo-cremona.polimi.it/en/',
         },
         {
+          text: 'Sponsors',
+          href: getPermalink('/workshop/sponsors'),
+        },
+        {
           text: 'Previous IWAENCs',
           href: 'https://www.iwaenc.org/proceedings.html',
         },
@@ -146,6 +150,7 @@ export const footerData = {
       links: [
         { text: 'Organizing Committee', href: '/workshop/committee' },
         { text: 'Venue', href: 'https://www.polo-cremona.polimi.it/en/'},
+        { text: 'Sponsors', href: '/workshop/sponsors' },
         { text: 'Previous IWAENCs', href: 'https://www.iwaenc.org/proceedings.html' },
       ],
     },

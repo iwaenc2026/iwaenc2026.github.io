@@ -1,0 +1,82 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from "../../components/widgets/Hero2.astro";
+import Brands from "../../components/widgets/Brands.astro";
+import Brands2 from "../../components/widgets/Brands2.astro";
+import Brands3 from "../../components/widgets/Brands3.astro";
+
+const metadata = {
+  title: 'Keynotes',
+};
+---
+
+<Layout metadata={metadata}>
+
+    <Hero
+            tagline="Workshop"
+            title="Sponsors"
+            subtitle="We warmly thank our generous sponsors for their invaluable support in making this workshop possible."
+    >
+    </Hero>
+    <!---
+       <Brands2
+               title="Golden Sponsors"
+               images={[
+                   {
+                       src: '',
+                       alt: '',
+                   },
+               ]}
+       >
+           <Fragment slot="bg">
+               <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+           </Fragment>
+
+       </Brands2>
+--->
+    <Brands3
+            title="Silver Sponsors"
+            images={[
+                {
+                    src: '~/assets/images/logos/HEAD_Firmenzeichen_blau.png',
+                    alt: 'Head Acoustics',
+                },
+            ]}
+    />
+
+    <Brands
+            title="Bronze Sponsors"
+            images={[
+                {
+                    src: '~/assets/images/logos/GoogleLogo_FullColor_RGB.png',
+                    alt: 'Google',
+                },
+            ]}
+            >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Brands>
+
+    <Brands2
+            title="Technical Co-Sponsors"
+            subtitle="We are grateful to our technical co-sponsors for their essential support and collaboration in the success of our event."
+            images={[
+                {
+                    src: '~/assets/images/logos/ieee_sps_cospo.jpg',
+                    alt: 'IEEE Signal Processing Society',
+                },
+                {
+                    src: '~/assets/images/logos/logo_eurasip.png',
+                    alt: 'EURASIP',
+                },
+            ]}
+    >
+    </Brands2>
+
+</Layout>
