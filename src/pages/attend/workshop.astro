@@ -1,0 +1,189 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+
+const metadata = {
+  title: 'Attend',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Satellite Event"
+    title="Next-Generation Audio Processing for Smart Eyewear"
+    subtitle='You are cordially invited to participate in the satellite workshop "Next-Generation Audio Processing for Smart Eyewear," held as a half-day event in conjunction with the International Workshop on Acoustic Signal Enhancement (IWAENC) 2026.'
+    image={{
+      src: 'https://images.unsplash.com/photo-1592875934887-128aceebb5e2?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: "Smart Eyewear",
+    }}
+  />
+
+
+  <!-- Features Widget *************** -->
+    <!--
+      <Features
+          id="features"
+          tagline="Discover the"
+          title="Topics of Interest"
+          columns={2}
+          subtitle="The organizing committee particularly encourages proposals linked to ongoing or recently completed research projects (e.g., national or European projects). For all topics listed below, both model-based and data-driven methods and algorithms are welcome."
+          items={[
+            {
+              title: 'Acoustic echo and feedback suppression',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Noise reduction',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Microphone array processing',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Source localization and tracking',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Speaker separation, extraction and diarization',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Dereverberation',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Active noise control',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Robot audition',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Speech and audio coding',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Acoustic sensor networks',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Acoustic event detection and scene classification',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Spatial audio recording and reproduction',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Modelling, analysis and synthesis of acoustic environments',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Auditory modelling and hearing instruments',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Datasets for speech and audio',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Quality and intelligibility assessment',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'New and emerging topics in speech and audio processing',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Multimodal speech and audio processing, including audio-video, audio-EEG, etc.',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Speech analysis: activity detection, overlapping speech detection, emotion recognition, etc.',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+            {
+              title: 'Speech intelligibility enhancement',
+              description: '',
+              icon: 'tabler:bulb',
+            },
+          ]}
+      />
+        ************** -->
+
+<!-- Features2 Widget ************** -->
+<Features2
+        title="Workshop"
+        subtitle=""
+        tagline="More on the"
+        columns={1}
+        items={[
+            {
+                title: '',
+                description:
+                    'Smart eyewear (augmented reality glasses, smart frames, and audio spectacles) is rapidly emerging as the next major personal computing platform. However, transitioning advanced audio capabilities from traditional form factors (like smartphones or over-ear headphones) to a lightweight pair of glasses introduces unprecedented acoustic and hardware challenges.' +
+                    'This workshop explores the intersection of spatial audio, speech enhancement, and resource-constrained edge computing.' +
+                    'The scope covers algorithmic and architectural solutions tailored to the unique realities of eyewear: <br><br> ' +
+                    '• <b>Egocentric Array Processing: Managing extreme acoustic shadowing from the user\'s head and optimizing tightly spaced microphone arrays localized around the temples</b>; <br> ' +
+                    '• <b>Sensor Fusion: Combining acoustic microphones with alternative sensors (e.g., bone-conduction sensors and accelerometers) for robust speech extraction in high-noise environments</b>; <br> ' +
+                    '• <b>Severe Resource Deficits: Developing ultra-low-latency algorithms capable of running within microwatt power constraints</b>; <br> ' +
+                    '• <b>Acoustics & Transduction: Mitigating severe wind noise across the frames and managing micro-loudspeaker playback to ensure acoustic transparency (hear-through) without feedback, own-voice amplification, and interferences.</b> <br><br>  ' +
+                    'Experts from both academia and industry will provide a comprehensive overview of audio processing for smart eyewear, covering the state of the art and the field\'s challenges from both practical and theoretical perspectives. <br><br>' +
+                    'Program: TBA <br>' +
+                    'Date: 7 Sept. 2026 - Afternoon TBA <br>' +
+                    'Venue: Politecnico di Milano - Polo Territoriale di Cremona<br><br>'  +
+                    'Organization: <br>' +
+                    'Prof. Israel Cohen - Technion & Polimi <br>' +
+                    'Dr. Niccolò Antonello - EssilorLuxottica'
+            },
+        ]}
+>
+    <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+</Features2>
+
+  <!--
+  <CallToAction
+    title="To be added"
+    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Download Template',
+        href: 'https://github.com/arthelokyo/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  /> -->
+</Layout>
