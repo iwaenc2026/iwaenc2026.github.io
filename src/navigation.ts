@@ -25,7 +25,7 @@ export const headerData = {
       ],*/
     },
     {
-      text: 'Workshop',
+      text: 'IWAENC',
       links: [
         {
           text: 'Organizing Committee',
@@ -91,7 +91,7 @@ export const headerData = {
           href: getPermalink('/attend/keynotes'),
         },
         {
-          text: 'Satellite Event',
+          text: 'Workshop',
           href: getPermalink('/attend/workshop'),
         },
       ],
@@ -150,7 +150,7 @@ export const footerData = {
   image: [],
   links: [
     {
-      title: 'Workshop',
+      title: 'IWAENC',
       links: [
         { text: 'Organizing Committee', href: '/workshop/committee' },
         { text: 'Venue', href: 'https://www.polo-cremona.polimi.it/en/'},
@@ -179,7 +179,7 @@ export const footerData = {
       title: 'Attend',
       links: [
         { text: 'Keynotes', href: '/attend/keynotes' },
-        { text: 'Satellite Event', href: '/attend/workshop' },
+        { text: 'Workshop', href: '/attend/workshop' },
       ],
     },
     {
