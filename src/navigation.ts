@@ -91,6 +91,10 @@ export const headerData = {
           href: getPermalink('/attend/keynotes'),
         },
         {
+          text: 'Social Program',
+          href: getPermalink('/attend/social-program'),
+        },
+        {
           text: 'Workshop',
           href: getPermalink('/attend/workshop'),
         },
@@ -179,6 +183,7 @@ export const footerData = {
       title: 'Attend',
       links: [
         { text: 'Keynotes', href: '/attend/keynotes' },
+        { text: 'Social Program', href: '/attend/social-program' },
         { text: 'Workshop', href: '/attend/workshop' },
       ],
     },

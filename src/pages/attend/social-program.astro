@@ -1,0 +1,143 @@
+---
+import CallToAction from '../../components/widgets/CallToAction.astro';
+import Content from '../../components/widgets/Content.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Testimonials from '../../components/widgets/Testimonials.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import type { IconifyJSON, IconifyInfo, IconifyMetaData, IconifyChars } from '@iconify/types';
+import {IconifyJSON} from "@iconify-json/flat-color-icons";
+
+const metadata = {
+  title: 'Services',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Attend"
+    title="Social Program"
+    subtitle="Alongside a rich scientific program, participants will have the opportunity to experience the culture, history, and traditions of the region through a carefully curated social program, designed to foster networking, inspiration, and memorable shared experiences."
+    image={{
+      src: 'https://images.unsplash.com/photo-1647167452643-e5460914b3cd?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Cremona',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'h. 17:30 - Welcome at Museo del Violino',
+        description:
+          'At the Museo del Violino in Cremona, the conference will open with an unforgettable evening that celebrates music, craftsmanship, and inspiration.\n' +
+            'Guests will be welcomed into the heart of a place where centuries of tradition resonate, beginning with a guided tour through the museum’s remarkable collection.\n' +
+            'The experience will then move into the Auditorium Giovanni Arvedi, where a special live audition will immerse attendees in the pure, evocative sound of the violin.\n' +
+            'The evening will conclude with a refined cocktail, offering a moment to connect, reflect, and set the tone for the days ahead in an atmosphere of elegance and shared passion.\n <br><br>' +
+            'Included in the registration fee. <br><br> Picture from Museo del Violino®. All rights reserved.',
+          icon: 'tabler:music',
+      },
+
+    ]}
+    image={{
+      src: 'https://pbs.twimg.com/media/CezfMxxW8AEZ_Nx.jpg',
+      alt: 'Violin Museum - Museo del Violino®. All rights reserved.',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Monday, September 7th<br>
+      </h3>
+    </Fragment>
+
+      <Fragment slot="bg">
+          <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'h. 18:30 - Cremona guided tour',
+        description:
+          'Starting from the Politecnico campus of Cremona, housed in the former Manfredini barracks, this guided walking tour invites participants on a gentle journey into the soul of the city. Step by step, the atmosphere shifts from the quiet charm of the academic setting to the vibrant pulse of Cremona’s historic center, revealing a landscape where past and present blend seamlessly.\n' +
+            'As the streets unfold, each corner hints at centuries of stories, craftsmanship, and culture, creating a sense of discovery that goes beyond what is seen. The walk becomes an experience of connection—between places, people, and traditions—leading participants toward the heart of the city in a relaxed and evocative atmosphere.\n' +
+            'More than a simple route, this tour is an invitation to feel Cremona: to absorb its rhythm, its elegance, and its timeless spirit, as the city gradually reveals itself along the way.\n <br> <br>' +
+            'Included in the registration fee.',
+        icon: 'tabler:walk',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1650540378411-8f62dacfeccc?q=80&w=655&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Cremona',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Tuesday, September 8th <br></h3>
+    </Fragment>
+  </Content>
+
+
+    <Content
+            isReversed
+            items={[
+                {
+                    title: 'h. 19:30 - Dinner at Juliette ',
+                    description:
+                        'Shuttle bus from Cremona center right after the guided tour.\n' +
+                        'Set in the elegant and intimate atmosphere of Juliette in Cremona, this exclusive dinner offers a moment of refined conviviality reserved for conference participants. Guests will be welcomed into a dedicated space, thoughtfully arranged to create a warm and engaging setting, where conversation and connection can unfold naturally.\n' +
+                        'The evening will be enriched by live musical entertainment, adding a subtle yet captivating soundtrack that enhances the ambiance and reflects the city’s deep-rooted musical heritage. Each moment is designed to evoke a sense of harmony—between taste, sound, and shared experience.\n' +
+                        'To ensure a seamless experience, a dedicated shuttle service will be available for both the outward and return journeys from Cremona’s city center, allowing participants to fully relax and enjoy the evening from beginning to end.\n <br><br>' +
+                        'Tickets available during the registration.',
+                    icon: 'tabler:grill-fork',
+                },
+
+            ]}
+            image={{
+                src: 'https://scontent-nrt1-2.xx.fbcdn.net/v/t39.30808-6/486675896_9190229877741570_8904918684217399482_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3wGy3iPLMFoQ7kNvwHARqQj&_nc_oc=AdoTmfwO4oLbNVZ5qJQgNRAFNbx7hmkPpzeGc6W6bnFTbC35iZsPtdL18vh8LE3WvKo&_nc_zt=23&_nc_ht=scontent-nrt1-2.xx&_nc_gid=73zO8i6iEdfBj5b5-zZKtQ&_nc_ss=7b2a8&oh=00_Af-UnKd-6WNSMUspOzFOWQ5hHx6M1Y7p4SCGNSZhTs8rZQ&oe=6A40F7B7',
+                alt: 'Juliette',
+            }}
+    >
+
+    </Content>
+
+    <Content
+            isAfterContent
+            items={[
+                {
+                    title: 'h. 17:30 - Private tour at Iseo Lake and dinner at Museo Auto Storiche Brescia',
+                    description:
+                        'Discover the charm of Lake Iseo through an experience designed to inspire and enchant. Departing from Cremona after lunch, participants will be comfortably accompanied on a journey that unfolds across one of Northern Italy’s most evocative landscapes, where water, light, and tradition blend into a uniquely serene atmosphere.\n' +
+                        'The excursion invites guests to embrace the gentle rhythm of the lake, surrounded by timeless scenery and a sense of quiet wonder that defines this hidden gem.\n' +
+                        'Lake Iseo is home to Montisola, the largest inhabited lake island in Europe, as well as the two small islands of Loreto and San Paolo. The excursion includes a tour around all three islands (Montisola, Loreto, and San Paolo, thus covering the entire Lake Iseo), with a stop and free time to explore Peschiera Maraglio, a picturesque village located on the southeastern tip of Montisola.\n' +
+                        'Founded in the early Middle Ages as a fishing outpost of Iseo, it is one of the island’s most important centers and undoubtedly its most iconic image. It lies at the foot of extensive coppice woods and cypress groves that stretch across the island’s broad eastern slope.\n' +
+                        'As the day transitions into evening, the experience continues in Brescia at the Museo Auto Storiche —once the renowned Mille Miglia Museum—an iconic space that celebrates movement, elegance, and the spirit of innovation. Within its evocative setting, where history and passion for engineering come alive, guests will enjoy a memorable dinner immersed in a truly distinctive ambiance.\n' +
+                        'Round-trip transportation from Cremona is included, ensuring a seamless and relaxing experience that allows participants to fully enjoy every moment of this captivating journey. <br><br>' +
+                        'Included in the registration fee.',
+                    icon: 'tabler:speedboat',
+                },
+
+            ]}
+            image={{
+                src: 'https://images.unsplash.com/photo-1745748763535-1a1036da0ca4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alt: 'Mille Miglia',
+            }}
+    >
+        <Fragment slot="content">
+            <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Wednesday, September 9th<br>
+            </h3>
+        </Fragment>
+
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Content>
+
+
+</Layout>
