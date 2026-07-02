@@ -1,0 +1,153 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+import CallToAction from "../../components/widgets/CallToAction.astro";
+
+const metadata = {
+    title: 'Calls and Submissions',
+};
+---
+
+<Layout metadata={metadata}>
+    <!-- Hero2 Widget ******************* -->
+
+    <Hero
+            tagline="Calls and Submissions"
+            title="Call for Journal Presentations"
+            subtitle="To foster the participation of representatives from both industry and academia who might otherwise be unable to contribute to IWAENC 2026, this initiative offers the opportunity to present recent journal work to the IWAENC community. IWAENC 2026 invites researchers to submit requests for the presentation of recently published journal papers in research areas aligned with the scope of the conference. Presentations of accepted journal papers will take place in poster format, as for the other papers presented at IWAENC 2026."
+            actions={[
+                { variant: 'primary', text: 'Download it!', href: 'https://raw.githubusercontent.com/iwaenc2026/iwaenc2026.github.io/main/cfjp_IWAENC_2026.pdf', icon: 'tabler:square-rounded-arrow-right' },
+                { variant: 'secondary', text: 'Submit your Journal!', href: 'https://cmt3.research.microsoft.com/IWAENC2026/Track/3/Submission/Create', icon: 'tabler:square-rounded-arrow-right' },
+            ]}
+            image={{
+                src: 'https://images.unsplash.com/photo-1532153955177-f59af40d6472?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alt: "Journals",
+            }}
+    />
+
+    <!-- Features Widget *************** -->
+
+    <Features
+            id="features"
+            tagline="Discover the"
+            title="Topics"
+            columns={2}
+            subtitle="Topics of interest include but are not limited to:"
+            items={[
+                {
+                    title: 'Speech and audio enhancement, including noise reduction, echo and feedback control, dereverberation, and intelligibility improvement',
+                    description: '',
+                    icon: 'tabler:bulb',
+                },
+                {
+                    title: 'Microphone array processing, source localization and tracking, source separation, diarization, and speaker extraction',
+                    description: '',
+                    icon: 'tabler:bulb',
+                },
+                {
+                    title: 'Spatial audio, acoustic scene analysis, acoustic event detection, and acoustic environment modelling',
+                    description: '',
+                    icon: 'tabler:bulb',
+                },
+                {
+                    title: 'Robot audition, acoustic sensor networks, active noise control, and hearing-assistive technologies',
+                    description: '',
+                    icon: 'tabler:bulb',
+                },
+                {
+                    title: 'Speech and audio coding, analysis, synthesis, quality assessment, datasets, and evaluation methodologies',
+                    description: '',
+                    icon: 'tabler:bulb',
+                },
+                {
+                    title: 'Multimodal, machine learning-based, and emerging approaches for speech, audio, and acoustic signal processing',
+                    description: '',
+                    icon: 'tabler:bulb',
+                },
+            ]}
+    />
+
+
+    <!-- Features2 Widget ************** -->
+    <Features2
+            title="Journal Presentations"
+            subtitle=""
+            tagline="More on"
+            columns={1}
+            items={[
+                {
+                    title: '',
+                    description: '<b>Selection Process</b><br><br>' +
+                        'As the number of available presentation slots is limited, it may not be possible to accept all requests.\n' +
+                        'A preliminary selection will be carried out based on the relevance of the submitted journal papers to the scope of IWAENC 2026. The remaining requests will then be ranked according to the following criteria:\n<br>' +
+                        '• Higher priority will be given to presentations by researchers who are not authors of papers included in the IWAENC 2026 proceedings;<br> ' +
+                        '• Presentations by students will be favored.<br><br>' +
+                        '<b>Registration</b><br><br>' +
+                        'Presenters of accepted journal papers must register for IWAENC 2026 according to the same registration rules and conditions as all other conference participants. A full registration is required in order to present the paper.\n' +
+                        'An extension of the early-bird registration deadline to August 8, 2026 is granted exclusively to journal paper presenters who are not authors of other papers included in the IWAENC 2026 proceedings.',
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+    <CallToAction
+            title="Submit your Journal Presentation"
+            subtitle="Requests for journal paper presentations must be submitted through the following link:"
+            actions={[
+                { variant: 'secondary', text: 'Submit it here!', href: 'https://cmt3.research.microsoft.com/IWAENC2026/Track/3/Submission/Create', icon: 'tabler:square-rounded-arrow-right' },
+            ]
+            }
+    />
+
+    <!-- Steps Widget ****************** -->
+
+    <Steps
+            title="Important Deadlines"
+            tagline="Note down the"
+            isReversed={true}
+            items={[
+                {
+                    title: 'Jul. 14, 2026: deadline for submitting requests for journal paper presentations',
+                    icon: 'tabler:number-1',
+                },
+                {
+                    title: 'Jul. 21, 2026: notification of acceptance',
+                    icon: 'tabler:number-2',
+                },
+                {
+                    title: 'Aug. 08, 2026: extended early-bird registration deadline for eligible journal paper presenters',
+                    icon: 'tabler:number-2',
+                },
+            ]}
+            image={{
+                src: 'https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alt: 'Books',
+            }}
+    />
+
+
+    <!--
+    <CallToAction
+      title="To be added"
+      subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Download Template',
+          href: 'https://github.com/arthelokyo/astrowind',
+          icon: 'tabler:download',
+        },
+      ]}
+    /> -->
+</Layout>

@@ -77,15 +77,15 @@ export const headerData = {
           text: 'Paper Submission',
           href: getPermalink('/authors/sub'),
         },
-        {
-          text: 'Registration',
-          href: getPermalink('/authors/registration'),
-        },
       ],
     },
     {
       text: 'Attend',
       links: [
+        {
+          text: 'Registration',
+          href: getPermalink('/authors/registration'),
+        },
         {
           text: 'Keynotes',
           href: getPermalink('/attend/keynotes'),
@@ -176,12 +176,12 @@ export const footerData = {
       title: 'Authors',
       links: [
         { text: 'Paper Submission', href: '/authors/sub' },
-        { text: 'Registration', href: '/authors/registration' },
       ],
     },
     {
       title: 'Attend',
       links: [
+        { text: 'Registration', href: '/authors/registration' },
         { text: 'Keynotes', href: '/attend/keynotes' },
         { text: 'Social Program', href: '/attend/social-program' },
         { text: 'Workshop', href: '/attend/workshop' },
