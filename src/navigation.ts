@@ -99,6 +99,10 @@ export const headerData = {
           href: getPermalink('/attend/social-program'),
         },
         {
+          text: 'Student Meetup',
+          href: getPermalink('/attend/student-meetup'),
+        },
+        {
           text: 'Workshop',
           href: getPermalink('/attend/workshop'),
         },
@@ -189,6 +193,7 @@ export const footerData = {
         { text: 'Registration', href: '/authors/registration' },
         { text: 'Keynotes', href: '/attend/keynotes' },
         { text: 'Social Program', href: '/attend/social-program' },
+        { text: 'Student Meetup', href: '/attend/student-meetup' },
         { text: 'Workshop', href: '/attend/workshop' },
       ],
     },
