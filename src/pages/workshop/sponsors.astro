@@ -9,6 +9,7 @@ import Hero2 from "../../components/widgets/Hero2.astro";
 import Brands from "../../components/widgets/Brands.astro";
 import Brands2 from "../../components/widgets/Brands2.astro";
 import Brands3 from "../../components/widgets/Brands3.astro";
+import Brands4 from "../../components/widgets/Brands4.astro";
 
 const metadata = {
   title: 'Keynotes',
@@ -23,13 +24,13 @@ const metadata = {
             subtitle="We warmly thank our generous sponsors for their invaluable support in making this workshop possible."
     >
     </Hero>
-    <!---
-       <Brands2
+
+       <Brands4
                title="Golden Sponsors"
                images={[
                    {
-                       src: '',
-                       alt: '',
+                       src: '~/assets/images/logos/Meta_Lockup_PositivePrimary_RGB.svg',
+                       alt: 'Meta',
                    },
                ]}
        >
@@ -37,8 +38,8 @@ const metadata = {
                <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
            </Fragment>
 
-       </Brands2>
---->
+       </Brands4>
+
     <Brands3
             title="Silver Sponsors"
             images={[
