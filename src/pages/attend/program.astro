@@ -1,0 +1,85 @@
+---
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+
+const metadata = {
+    title: 'Program',
+};
+---
+
+<Layout metadata={metadata}>
+    <!-- Hero Widget ******************* -->
+
+    <Hero
+            tagline="Attend"
+            image={{
+                src: '~/assets/images/cremona-campus.jpeg',
+                alt: 'Banner',
+            }}
+    >
+        <Fragment slot="title">
+            <span class="text-accent dark:text-white">Program</span>
+        </Fragment>
+
+        <Fragment slot="subtitle">
+            Discover the rich program of IWAENC 2026, bringing together world-class scientific presentations, interactive sessions, workshops, and social events in the inspiring setting of Cremona.
+        </Fragment>
+    </Hero>
+
+    <Features2
+            title="Program at a Glance"
+            tagline=""
+            subtitle="On Sunday Sept. 6, in the afternoon/early evening (exact time TBA), there will be a transfer by bus from Milano to Cremona."
+            columns={4}
+            items={[
+                {
+                    title: 'Monday Sept. 7',
+                    description: '<b>Morning (exact time TBA):</b> Transfer by Bus from Milano to Cremona<br>' +
+                        '<b>1:30 PM - 4:30 PM:</b> Workshop<br>' +
+                    '<b>5:30 PM - Evening:</b> Welcome Activities (Museum Visit + Concert + Welcome Reception)',
+                },
+                {
+                    title: 'Tuesday Sept. 8',
+                    description: '<b>08:15 AM - 08:30 AM:</b> Opening<br>' +
+                        '<b>08:30 AM - 09:30 AM:</b> Keynote 1<br>' +
+                        '<b>09:30 AM - 11:00 AM:</b> Poster Session 1<br>' +
+                        '<b>11:00 AM - 11:30 AM:</b> Coffee Break<br>' +
+                        '<b>11:30 AM - 1:00 PM:</b> Poster Session 2<br>' +
+                        '<b>1:00 PM - 3:00 PM:</b> Lunch + Student Activities<br>' +
+                        '<b>3:00 PM - 4:00 PM:</b> Poster Session 3<br>' +
+                        '<b>4:00 PM - 4:30 PM:</b> Coffee Break + Demo Session (if needed)<br>' +
+                        '<b>4:30 PM - 6:00 PM:</b> Poster Session 4<br>' +
+                        '<b>6:00 PM - 6:30 PM:</b> Demo Session<br>' +
+                        '<b>6:30 PM - 8:00 PM:</b> City Tour<br>' +
+                        '<b>8:00 PM - Evening:</b> Dinner @ Juliette (paid option)<br>',
+                },
+                {
+                    title: 'Wednesday Sept. 9',
+                    description: '<b>08:30 AM - 09:30 AM:</b> Keynote 2<br>' +
+                        '<b>09:30 AM - 11:00 AM:</b> Poster Session 5<br>' +
+                        '<b>11:00 AM - 11:30 AM:</b> Coffee Break<br>' +
+                        '<b>11:30 AM - 12:30 PM:</b> Student Best Paper Competition - Part 1<br>' +
+                        '<b>12:30 PM - 1:30 PM:</b> Poster Session 6<br>' +
+                        '<b>1:30 PM - 2:15 PM:</b> Lunch<br>' +
+                        '<b>2:15 PM - Evening:</b> Social Program (Lake Iseo + Museum Auto Storiche + dinner)<br>',
+                },
+                {
+                    title: 'Thursday Sept. 10',
+                    description: '<b>08:00 AM - 09:00 AM:</b> Keynote 3<br>' +
+                        '<b>09:00 AM - 10:30 AM:</b> Poster Session 7<br>' +
+                        '<b>10:30 AM - 11:00 AM:</b> Coffee Break<br>' +
+                        '<b>11:00 AM - 12:30 PM:</b> Poster Session 8<br>' +
+                        '<b>12:30 PM - 1:30 PM:</b> Student Best Paper Competition - Part 2<br>' +
+                        '<b>1:30 PM - 2:30 PM:</b> Lunch <br>' +
+                        '<b>Lunch Time (exact time TBA):</b> Early Bus from Cremona to Milano<br>' +
+                        '<b>3:00 PM - 3:30 PM:</b> Closing Ceremony<br>' +
+                        '<b>3:45 PM approximately:</b> Bus from Cremona to Milano<br>',
+                },
+            ]}
+    />
+
+</Layout>

@@ -91,6 +91,10 @@ export const headerData = {
           href: getPermalink('/authors/registration'),
         },
         {
+          text: 'Program',
+          href: getPermalink('/attend/program'),
+        },
+        {
           text: 'Keynotes',
           href: getPermalink('/attend/keynotes'),
         },
@@ -191,6 +195,7 @@ export const footerData = {
       title: 'Attend',
       links: [
         { text: 'Registration', href: '/authors/registration' },
+        { text: 'Program', href: '/attend/program' },
         { text: 'Keynotes', href: '/attend/keynotes' },
         { text: 'Social Program', href: '/attend/social-program' },
         { text: 'Student Meetup', href: '/attend/student-meetup' },
