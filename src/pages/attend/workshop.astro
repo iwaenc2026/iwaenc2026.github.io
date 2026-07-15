@@ -8,6 +8,7 @@ import Steps2 from '../../components/widgets/Steps2.astro';
 import Layout from '../../layouts/PageLayout.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from "../../components/widgets/Content.astro";
+import Hero2 from "../../components/widgets/Hero2.astro";
 
 const metadata = {
   title: 'Attend',
@@ -28,119 +29,6 @@ const metadata = {
   />
 
 
-  <!-- Features Widget *************** -->
-    <!--
-      <Features
-          id="features"
-          tagline="Discover the"
-          title="Topics of Interest"
-          columns={2}
-          subtitle="The organizing committee particularly encourages proposals linked to ongoing or recently completed research projects (e.g., national or European projects). For all topics listed below, both model-based and data-driven methods and algorithms are welcome."
-          items={[
-            {
-              title: 'Acoustic echo and feedback suppression',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Noise reduction',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Microphone array processing',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Source localization and tracking',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Speaker separation, extraction and diarization',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Dereverberation',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Active noise control',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Robot audition',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Speech and audio coding',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Acoustic sensor networks',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Acoustic event detection and scene classification',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Spatial audio recording and reproduction',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Modelling, analysis and synthesis of acoustic environments',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Auditory modelling and hearing instruments',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Datasets for speech and audio',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Quality and intelligibility assessment',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'New and emerging topics in speech and audio processing',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Multimodal speech and audio processing, including audio-video, audio-EEG, etc.',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Speech analysis: activity detection, overlapping speech detection, emotion recognition, etc.',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-            {
-              title: 'Speech intelligibility enhancement',
-              description: '',
-              icon: 'tabler:bulb',
-            },
-          ]}
-      />
-        ************** -->
-
 <!-- Features2 Widget ************** -->
 <Features2
         title="Workshop"
@@ -159,10 +47,16 @@ const metadata = {
                     '• <b>Severe Resource Deficits: Developing ultra-low-latency algorithms capable of running within microwatt power constraints</b>; <br> ' +
                     '• <b>Acoustics & Transduction: Mitigating severe wind noise across the frames and managing micro-loudspeaker playback to ensure acoustic transparency (hear-through) without feedback, own-voice amplification, and interferences.</b> <br><br>  ' +
                     'Experts from both academia and industry will provide a comprehensive overview of audio processing for smart eyewear, covering the state of the art and the field\'s challenges from both practical and theoretical perspectives. <br><br>' +
-                    'Program: TBA <br>' +
-                    'Date: 7 Sept. 2026 - Afternoon TBA <br>' +
-                    'Venue: Politecnico di Milano - Polo Territoriale di Cremona<br><br>'  +
-                    'Organization: <br>' +
+                    '<b>Program</b>:<br><br></br>' +
+                    '<b>Monday, Sept. 7</b><br>' +
+                    '<b>1:30 PM - 2:00 PM</b>: Compact Microphone and Loudspeaker Array Design for AI Smart Glasses - Prof. Jingdong Chen<br>' +
+                    '<b>2:00 PM - 2:30 PM</b>: Hybrid Model-Based and Learning-Based Approaches for Speech Enhancement in Hearables - Prof. Simon Doclo<br>' +
+                    '<b>2:30 PM - 3:00 PM</b>: Audio Processing for Augmented Reality Glasses - Dr. Ivan Tashev<br>' +
+                    '<b>3:00 PM - 3:30 PM</b>: Coffee Break<br>' +
+                    '<b>3:30 PM - 4:00 PM</b>: How do we Change the (Hearing) World? - Dr. Marcus Anders Holmberg<br>' +
+                    '<b>4:00 PM - 4:30 PM</b>: From Hearing Challenges to Everyday Adoption: Clinical Validation of Nuance Audio Plus Glasses - Maayan Koenigstein Priel<br><br>' +
+                    '<b>Venue</b>: Politecnico di Milano - Polo Territoriale di Cremona<br><br>'  +
+                    '<b>Organization</b>: <br>' +
                     'Prof. Israel Cohen - Technion & Polimi <br>' +
                     'Dr. Niccolò Antonello - EssilorLuxottica'
             },
@@ -173,17 +67,165 @@ const metadata = {
     </Fragment>
 </Features2>
 
-  <!--
-  <CallToAction
-    title="To be added"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        icon: 'tabler:download',
-      },
-    ]}
-  /> -->
+<Features2
+        title="Compact Microphone and Loudspeaker Array Design for AI Smart Glasses"
+        subtitle=""
+        tagline="Workshop Talk"
+        columns={1}
+        items={[
+            {
+                title: 'Abstract',
+                description: 'AI-powered smart glasses are emerging as a new generation of consumer devices, requiring compact and efficient microphone and loudspeaker arrays for seamless voice communication and human-AI speech interaction. These arrays must accurately capture the wearer\'s speech while delivering high-quality personal audio with minimal acoustic leakage, ensuring both robust performance in noisy environments and user privacy. In this talk, I will present our recent work on compact superarrays for speech acquisition and high-gain loudspeaker arrays for personal audio in smart glasses. The proposed superarray combines a small number of omnidirectional and directional microphones to achieve highly directional beamforming despite the limited array aperture. I will also introduce compact loudspeaker arrays that generate spatially focused sound fields, delivering clear audio to the wearer while substantially reducing sound leakage. The talk will highlight the underlying design principles, signal processing techniques, and representative experimental results.',
+                    icon: '',
+            },
+        ]}
+>
+</Features2>
+
+    <Hero2
+            tagline="Workshop Speaker"
+            title="Prof. Jingdong Chen"
+            subtitle="Jingdong Chen is a Professor at Wuhan University. His research interests focus on acoustic and speech signal processing. He has co-authored 16 monographs and published more than 300 papers in leading peer-reviewed journals and international conferences. Dr. Chen has served the global research community in a variety of leadership roles. He is currently the Chair of the IEEE Region 10 Membership Development Committee (MDC), the Chair of the IEEE Xi'an Section, and the Chair of the IEEE Xi'an Signal Processing Chapter. He previously served as an Associate Editor of the IEEE/ACM Transactions on Audio, Speech, and Language Processing and is a member of the editorial boards of several international journals. He has also served as the General Chair or Technical Program Chair for nearly two dozen international conferences. Dr. Chen has received numerous honors, including the IEEE Signal Processing Society Best Paper Award (2009), the Bell Labs Role Model Teamwork Award (2007 and 2009), the NASA Tech Brief Award (2009 and 2010), the Japan Trust International Research Grant from the Japan Key Technology Center (1998), and the National Science Fund for Distinguished Young Scholars from the National Natural Science Foundation of China (2014). He was elevated to IEEE Fellow for his contributions to acoustic signal processing and microphone arrays."
+            ]}
+            image={{
+                src: '~/assets/images/jc.jpg',
+                alt: 'Prof. Jingdong Chen',
+            }}
+    >
+    </Hero2>
+
+    <Features2
+            title="Hybrid Model-Based and Learning-Based Approaches for Speech Enhancement in Hearables"
+            subtitle=""
+            tagline="Workshop Talk"
+            columns={1}
+            items={[
+                {
+                    title: 'Abstract',
+                    description: "In assistive listening devices, speech quality and speech understanding may be severely degraded by background noise, competing speakers, and acoustic feedback. Hence, robust speech enhancement and feedback cancellation algorithms are required that are online-capable and perform well in dynamic acoustic scenarios. In this talk, I will present recent advances in model-based and deep learning-based approaches for multi-microphone speech enhancement and feedback cancellation in hearables. First, I will present hybrid speech enhancement algorithms in which quantities required by a model-based enhancement stage are estimated by a learning-based stage. This includes deep multi-frame MVDR beamforming, where I will show how structured temporal and spatio-temporal representations, as well as spatial regularization, can improve the interpretability of the learned quantities. Second, I will present deep learning-based own voice reconstruction for hearables equipped with an outer and an in-ear microphone, jointly addressing noise reduction and bandwidth extension by exploiting phoneme-dependent own voice transfer characteristics. Third, I will discuss deep feedback cancellation for hearing aids, focusing on an in-the-loop training strategy that improves robustness at high amplification gains. Together, these contributions illustrate how combining acoustic modeling with deep learning can lead to interpretable, robust, and real-time-capable speech processing algorithms for future assistive listening devices.",
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+    <Hero2
+            tagline="Workshop Speaker"
+            title="Prof. Simon Doclo"
+            subtitle="Simon Doclo received his Ph.D. degree in Applied Sciences from KU Leuven, Belgium, in 2003. Since 2009, he has been full professor at the University of Oldenburg, Germany, and scientific advisor to the Fraunhofer Institute for Digital Media Technology. His research activities center on signal processing for acoustical and biomedical applications, including microphone array processing, speech enhancement, active noise control, acoustic sensor networks, and hearing aid processing. Prof. Doclo has received several best paper awards (IWAENC 2001, EURASIP Signal Processing 2003, IEEE Signal Processing Society 2008, VDE ITG 2019). He was a member of the IEEE Signal Processing Society Technical Committee on Audio and Acoustic Signal Processing, served as Senior Area Editor for the IEEE Transactions on Audio, Speech and Language Processing (2021-2025), and was Technical Program Chair of WASPAA (2013) and IWAENC (2022). He is a member of the EAA Technical Committee on Audio Signal Processing. "
+            ]}
+            image={{
+                src: '~/assets/images/sd.jpg',
+                alt: 'Prof. Simon Doclo ',
+            }}
+    >
+
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Hero2>
+
+    <Features2
+            title="Audio Processing for Augmented Reality Glasses"
+            subtitle=""
+            tagline="Workshop Talk"
+            columns={1}
+            items={[
+                {
+                    title: 'Abstract',
+                    description: "This talk will start by outlining the typical hardware configuration of augmented reality (AR) glasses and discussing key design tradeoffs. It will review the main audio processing blocks, as well as the audio consumers and generators in core scenarios. Examples will span classic statistical signal processing, discriminative AI methods, and generative AI-based approaches. The talk will conclude with a discussion of the role of domain experts in the modern AI era. It will be illustrated with examples from the design of HoloLens and HoloLens 2 and audio processing work from the Audio and Acoustics Research Group at Microsoft Research.",
+                    icon: '',
+                },
+            ]}
+    >
+    </Features2>
+
+    <Hero2
+            tagline="Workshop Speaker"
+            title="Dr. Ivan Tashev"
+            subtitle="Dr. Ivan Tashev is a Partner Software Architect at Microsoft Research in Redmond, WA, where he leads the Audio and Acoustics Research Group and coordinates the Brain-Computer Interfaces project. His research interests include multichannel signal processing using machine learning and artificial intelligence approaches. He is the sole author of two books, co-author of two book chapters and more than 100 scientific papers, and an inventor on 50 U.S. patents. Dr. Tashev is an affiliate professor in the Department of Electrical and Computer Engineering at the University of Washington in Seattle and an honorary professor at the Technical University of Sofia, Bulgaria. Technologies developed by Dr. Tashev have been incorporated into many Microsoft products, and he served as the audio architect for Kinect and for HoloLens. He is an IEEE Fellow and a member of AES and ASA. More information is available on his Microsoft Research webpage: https://www.microsoft.com/en-us/research/people/ivantash/."]}
+            image={{
+                src: '~/assets/images/it.jpeg',
+                alt: 'Dr. Ivan Tashev ',
+            }}
+    >
+    </Hero2>
+
+    <Features2
+            title="How do we Change the (Hearing) World?"
+            subtitle=""
+            tagline="Workshop Talk"
+            columns={1}
+            items={[
+                {
+                    title: 'Abstract',
+                    description: "No matter how we look at the data, hearing impairment remains a woefully undertreated handicap. We are also learning more and more that untreated hearing loss is a health issue with consequences that extend well beyond hearing, speech understanding, and the other outcomes we have traditionally measured. Looking carefully at the data, there have been improvements over the past years. However, progress has been slow. This talk will focus on the range of potential limitations to treatment—technical, psychological, and beyond—as well as a range of potential ways to improve the treatment uptake. What types of research can we learn from beyond the hearing and audiology fields? What does that mean for products, and in particular for future signal processing strategies? The challenge ahead is not only to make hearing devices perform better in the laboratory, but to make them more valuable and relevant in everyday life. This may require new ways of thinking about signal processing, product design, and the role of hearing care itself.",
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+    <Hero2
+            tagline="Workshop Speaker"
+            title="Dr. Marcus Holmberg"
+            subtitle="Dr. Marcus Holmberg is Audiology Product Director at EssilorLuxottica and leads the part of the Wearables R&D team focused on Nuance hearing glasses. Marcus has a background in electrical engineering from Chalmers University of Technology, Sweden, and holds a PhD in hearing research from the Technical University of Darmstadt, Germany. Prior to joining EssilorLuxottica, Holmberg worked with bone-conduction hearing implants at Oticon Medical, the world's first “hearable” at Bragi, and high-end hearing aid audiology at Oticon. While now primarily focused on leading R&D and product teams, his research interests continue to include hearing rehabilitation, signal processing, hearing aid outcomes, and the future of hearing technology."
+            ]}
+            image={{
+                src: '~/assets/images/mah.jpg',
+                alt: 'Dr. Marcus Holmberg ',
+            }}
+    >
+
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Hero2>
+
+    <Features2
+            title="From Hearing Challenges to Everyday Adoption: Clinical Validation of Nuance Audio Plus Glasses"
+            subtitle=""
+            tagline="Workshop Talk"
+            columns={1}
+            items={[
+                {
+                    title: 'Abstract',
+                    description: "Millions of adults experience hearing difficulties yet do not adopt traditional hearing aids, often due to stigma, perceived need, or barriers to access. Nuance Audio Glasses represent a new category of wearable technology that combines auditory support with familiar eyewear, potentially offering a more approachable pathway to hearing assistance. This presentation will review the evidence-generation journey behind Nuance Audio Plus Glasses, focusing on both controlled laboratory assessment and real-world user experience. Clinical studies evaluated speech understanding in noise using standardized speech perception measures, while ecological and patient-reported outcome methodologies captured benefit during everyday listening situations. Participants used the technology in their daily environments, providing insight into communication performance, listening effort, usability, and overall acceptance. The presentation will discuss key lessons learned from translating audio-processing innovation into a consumer wearable product and explore the role of smart eyewear in expanding access to hearing support for adults with mild-to-moderate hearing difficulties. Results demonstrate improved speech understanding in challenging acoustic environments, accompanied by positive real-world outcomes and high user acceptance. The findings highlight the importance of evaluating emerging hearing technologies not only through traditional laboratory metrics but also through evidence reflecting everyday use and user behavior.",
+                    icon: '',
+                },
+            ]}
+    >
+    </Features2>
+
+    <Hero2
+            tagline="Workshop Speaker"
+            title="Maayan Koenigstein Priel"
+            subtitle="Maayan Koenigstein Priel is an audiologist and Evidence & Research Team Leader at Nuance Audio. She leads the design of research methodologies, validation frameworks, and user studies to support the development of audio-smart eyewear. Before moving into industry research, Maayan worked across public and private hearing healthcare settings, providing diagnostic audiology services, patient counseling, hearing rehabilitation, and hearing aid fitting. At Nuance Audio, she combines her clinical background with expertise in research methods and user-centered evaluation to assess hearing technologies in both laboratory and real-world environments. She works closely with audiologists, signal processing engineers, product teams, and UX specialists to generate evidence that informs product development and validates user benefit. Her current work focuses on speech-in-noise performance, real-world outcomes, and improving access to hearing support through wearable technologies."
+            image={{
+                src: '~/assets/images/mkp.jpg',
+                alt: 'Maayan Koenigstein Priel',
+            }}
+    >
+    </Hero2>
+
+
+        <!--
+        <CallToAction
+          title="To be added"
+          subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+          actions={[
+            {
+              variant: 'primary',
+              text: 'Download Template',
+              href: 'https://github.com/arthelokyo/astrowind',
+              icon: 'tabler:download',
+            },
+          ]}
+        /> -->
 </Layout>
