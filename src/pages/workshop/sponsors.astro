@@ -10,6 +10,7 @@ import Brands from "../../components/widgets/Brands.astro";
 import Brands2 from "../../components/widgets/Brands2.astro";
 import Brands3 from "../../components/widgets/Brands3.astro";
 import Brands4 from "../../components/widgets/Brands4.astro";
+import Brands5 from "../../components/widgets/Brands5.astro";
 
 const metadata = {
   title: 'Keynotes',
@@ -80,6 +81,17 @@ const metadata = {
         </Fragment>
     </Brands>
 
+    <Brands5
+            title="Patrons"
+            images={[
+                {
+                    src: '~/assets/images/logos/WSA_Logo1.png',
+                    alt: 'WSAudiology',
+                },
+            ]}
+    >
+    </Brands5>
+
     <Brands2
             title="Technical Co-Sponsors"
             subtitle="We are grateful to our technical co-sponsors for their essential support and collaboration in the success of our event."
@@ -94,6 +106,7 @@ const metadata = {
                 },
             ]}
     >
+
     </Brands2>
 
 </Layout>

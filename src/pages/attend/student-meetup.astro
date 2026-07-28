@@ -7,6 +7,7 @@ import Testimonials from '../../components/widgets/Testimonials.astro';
 import Layout from '../../layouts/PageLayout.astro';
 import type { IconifyJSON, IconifyInfo, IconifyMetaData, IconifyChars } from '@iconify/types';
 import {IconifyJSON} from "@iconify-json/flat-color-icons";
+import Brands5 from "../../components/widgets/Brands5.astro";
 
 const metadata = {
   title: 'Student Meetup',
@@ -55,5 +56,17 @@ const metadata = {
       </Fragment>
   </Content>
 
+  <Brands5
+      tagline="Student Activities"
+      title="Patrons"
+      subtitle="We thank our patrons for making the IWAENC 2026 student activities possible through their support."
+      images={[
+        {
+          src: '~/assets/images/logos/WSA_Logo1.png',
+          alt: 'WSAudiology',
+        },
+      ]}
+  >
+  </Brands5>
 
 </Layout>
