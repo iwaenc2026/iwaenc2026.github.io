@@ -54,7 +54,8 @@ const metadata = {
                     '<b>2:30 PM - 3:00 PM</b>: Audio Processing for Augmented Reality Glasses - Dr. Ivan Tashev<br>' +
                     '<b>3:00 PM - 3:30 PM</b>: Coffee Break<br>' +
                     '<b>3:30 PM - 4:00 PM</b>: How do we Change the (Hearing) World? - Dr. Marcus Anders Holmberg<br>' +
-                    '<b>4:00 PM - 4:30 PM</b>: From Hearing Challenges to Everyday Adoption: Clinical Validation of Nuance Audio Plus Glasses - Maayan Koenigstein Priel<br><br>' +
+                    '<b>4:00 PM - 4:30 PM</b>: From Hearing Challenges to Everyday Adoption: Clinical Validation of Nuance Audio Plus Glasses - Maayan Koenigstein Priel<br>' +
+                    '<b>4:30 PM - 4:45 PM</b>: Odinsight: A Multimodal SmartEyewear for Audio Data Acquisition - Aurelio Teliti<br><br>' +
                     '<b>Venue</b>: Politecnico di Milano - Polo Territoriale di Cremona<br><br>'  +
                     '<b>Organization</b>: <br>' +
                     'Prof. Israel Cohen - Technion & Polimi <br>' +
@@ -212,6 +213,40 @@ const metadata = {
                 alt: 'Maayan Koenigstein Priel',
             }}
     >
+    </Hero2>
+
+    <Features2
+            title="Odinsight: A Multimodal SmartEyewear for Audio Data Acquisition"
+            subtitle=""
+            tagline="Workshop Talk"
+            columns={1}
+            items={[
+                {
+                    title: 'Abstract',
+                    description: "Speech and audio sensing on smart eyewear remains largely unexplored, even though these devices are inherently close to both the mouth and the ear. We present Odinsight, a multimodal smart eyewear platform designed for large-scale audio data acquisition. The device integrates a multi-microphone array with a vibration microphone, complemented by an IMU, Time-of-Flight, PPG, and ambient light sensors, enabling synchronized capture of acoustic, motion, physiological, and environmental signals. This rich multimodal dataset supports the development of algorithms for tasks such as speech enhancement, voice activity detection, own-voice recognition, and context-aware audio processing. We describe the included sensors and data-collection protocol and discuss early insights into how auxiliary modalities could improve the future robustness of audio algorithms under real-world, in-the-wild conditions.",
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+    <Hero2
+            tagline="Workshop Speaker"
+            title="Aurelio Teliti"
+            subtitle="Aurelio Teliti received the B.Sc. and M.Sc. degrees in Mechanical Engineering and Mechatronic Engineering from Politecnico di Torino, Italy, in 2021 and 2023, respectively. He is currently pursuing an Industrial Ph.D. at Politecnico di Milano in collaboration with the Smart Eyewear Laboratory, EssilorLuxottica, where he is part of the Audio and Biosensing team. His research focuses on multi-array audio source localization systems, with a strong emphasis on the integration of multimodal sensors to enhance robustness and accuracy. He develops lightweight algorithms to enable seamless co-design of hardware and software for optimal integration. "
+            ]}
+            image={{
+                src: '~/assets/images/at.jpg',
+                alt: 'Aurelio Teliti',
+            }}
+    >
+
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
     </Hero2>
 
 
