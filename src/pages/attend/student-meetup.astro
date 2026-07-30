@@ -19,14 +19,29 @@ const metadata = {
 
   <Hero
     tagline="Attend"
-    title="Student Meetup"
-    subtitle="A welcoming event for students to meet peers, exchange ideas, and build lasting professional connections within the IWAENC community."
+    title="Student Activities"
+    subtitle="Events for students to meet peers, exchange ideas, and build lasting professional connections within the IWAENC community."
     actions={[
       { text: 'Sign-up here!', href: 'https://forms.office.com/e/FNgnsHPTAm' },
     ]}
   />
 
   <!-- Content Widget **************** -->
+
+    <Features2
+            title="Best Student Paper Award"
+            subtitle=""
+            tagline="More on the "
+            columns={1}
+            items={[
+                {
+                    title: '',
+                    description: 'The IWAENC 2026 Technical Committee will present the Best Student Paper Award to recognize an outstanding student contribution to the conference. The selection will be based on originality, scientific merit, and the quality of writing and presentation. To be eligible, the paper must be presented by the candidate student. We gratefully acknowledge the generous support of <b>Mitsubishi Electric Research Laboratories (MERL)</b>, which sponsors this award.',
+                    icon: '',
+                },
+            ]}
+    >
+    </Features2>
 
   <Content
     isReversed
@@ -37,7 +52,8 @@ const metadata = {
           'Are you a student attending IWAENC? Join the Student Meetup, a dedicated networking event designed to help participants connect, exchange ideas, and build lasting collaborations.\n<br><br>' +
             'This informal gathering will feature a series of interactive activities and icebreakers to encourage participants to get to know one another, discuss their research interests, and foster new collaborations across institutions and research areas.\n' +
             'Whether you are attending IWAENC for the first time or returning to reconnect with colleagues, this is a great opportunity to expand your professional network and become part of the IWAENC student community.\n<br><br>' +
-            'Students interested in participating are encouraged to register using the sign-up form. Additional information about the venue and the planned activities will be provided further ahead.',
+            'Students interested in participating are encouraged to register using the sign-up form. Additional information about the venue and the planned activities will be provided further ahead.<br><br>' +
+          'We are thankful to <b>WSAudiology</b>, which sponsors this meetup.',
           icon: 'tabler:users',
       },
     ]}
@@ -65,6 +81,10 @@ const metadata = {
           src: '~/assets/images/logos/WSA_Logo1.png',
           alt: 'WSAudiology',
         },
+          {
+              src: '~/assets/images/logos/merl_logo.png',
+              alt: 'MERL',
+          },
       ]}
   >
   </Brands5>

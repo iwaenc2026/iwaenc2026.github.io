@@ -1,0 +1,77 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+
+const metadata = {
+  title: 'Presentation Guidelines',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Authors"
+    title="Presentation Guidelines"
+    subtitle="Poster presentations are an integral part of the IWAENC 2026 technical program, offering a unique opportunity to showcase your research and interact with the conference community in an informal setting."
+    image={{
+      src: '~/assets/images/poster.jpg',
+        alt: "Poster",
+    }}
+  />
+
+
+<!-- Features2 Widget ************** -->
+    <!-- Features2 Widget ************** -->
+    <Features2
+            title="Poster Presentation"
+            subtitle="Please follow the guidelines below to ensure a smooth presentation experience."
+            tagline="More on"
+            columns={1}
+            items={[
+                {
+                    title: '',
+                    description: '<b>Poster Size</b><br>\n' +
+                        'Poster boards measure 1 m (W) × 2 m (H). Please ensure that your poster fits within these dimensions.\n<br><br>' +
+                        '<b>Poster Content\n</b><br>' +
+                        'Your poster should include the paper title, authors, and affiliations at the top. Organize the content into clear sections (e.g., Introduction, Methods, Results, and Conclusions) and use large, readable fonts to ensure visibility from a distance.\n<br>' +
+                        'We encourage the use of figures, tables, photographs, and diagrams to communicate your work effectively. Keep the text concise and ensure that all graphics are of sufficient quality and resolution.<br><br>' +
+                        '<b>Poster Setup</b><br>' +
+                        'Posters should be mounted in the designated poster area at the workshop venue before the start of the corresponding session. Each paper will be assigned to a specific poster board; the poster number and setup instructions will be provided in the final program.<br>' +
+                        'Authors are expected to be present at their posters during the assigned poster session to discuss their work and answer questions from attendees.<br><br>' +
+                        '<b>Recommendations</b><br>' +
+                        'To make the most of the poster session, we recommend preparing a brief 2–3 minute overview of your work that can be adapted to different audiences. A clear and engaging introduction is often the best way to attract visitors and foster discussion.\n',
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+
+  <!-- Steps Widget ****************** -->
+
+
+  <!--
+  <CallToAction
+    title="To be added"
+    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Download Template',
+        href: 'https://github.com/arthelokyo/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  /> -->
+</Layout>

@@ -81,6 +81,10 @@ export const headerData = {
           text: 'Paper Submission',
           href: getPermalink('/authors/sub'),
         },
+        {
+          text: 'Presentation Guidelines',
+          href: getPermalink('/authors/presentation-guidelines'),
+        },
       ],
     },
     {
@@ -103,7 +107,7 @@ export const headerData = {
           href: getPermalink('/attend/social-program'),
         },
         {
-          text: 'Student Meetup',
+          text: 'Student Activities',
           href: getPermalink('/attend/student-meetup'),
         },
         {
@@ -189,6 +193,7 @@ export const footerData = {
       title: 'Authors',
       links: [
         { text: 'Paper Submission', href: '/authors/sub' },
+        { text: 'Presentation Guidelines', href: '/authors/presentation-guidelines' },
       ],
     },
     {
@@ -198,7 +203,7 @@ export const footerData = {
         { text: 'Program', href: '/attend/program' },
         { text: 'Keynotes', href: '/attend/keynotes' },
         { text: 'Social Program', href: '/attend/social-program' },
-        { text: 'Student Meetup', href: '/attend/student-meetup' },
+        { text: 'Student Activities', href: '/attend/student-meetup' },
         { text: 'Workshop', href: '/attend/workshop' },
       ],
     },
