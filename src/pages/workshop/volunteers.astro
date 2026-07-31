@@ -1,0 +1,43 @@
+---
+import Hero from '../../components/widgets/Hero.astro';
+import Features2 from "../../components/widgets/Features2.astro";
+import Layout from '../../layouts/PageLayout.astro';
+import CallToAction from "../../components/widgets/CallToAction.astro";
+
+const metadata = {
+    title: 'Volunteers',
+};
+---
+<Layout metadata={metadata}>
+
+<!-- Features2 Widget ************** -->
+<Features2
+        title="Volunteers"
+        subtitle="The Organizing Committee gratefully acknowledges the invaluable contribution of our volunteers, whose support is essential to the successful organization of IWAENC 2026."
+        tagline="Meet our"
+>
+    <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+</Features2>
+
+
+    <CallToAction
+            title=""
+            subtitle={"Youssef Abouelazm<br>" +
+            "Ipek Ceren Bayram<br>" +
+            "Elia D'Amen<br>" +
+            "Alberto Valdivia Flores<br>" +
+            "Jorge Cuartero Galindo<br>" +
+            "Hanxiang Gao<br>" +
+            "Thomas Guffroy<br>" +
+            "Margarita Makurina<br>" +
+            "Anna Chiara Melioli<br>" +
+            "Fatih Emir Sagiroglu<br>" +
+            "Gregorio Secchi<br>" +
+            "Riccardo Tocci<br>" +
+            "Emanuele Turbanti<br>"}
+    >
+    </CallToAction>
+
+</Layout>
