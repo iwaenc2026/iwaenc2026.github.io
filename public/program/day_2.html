@@ -1,0 +1,804 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/music.png">
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/custom.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+    <link rel="stylesheet" href="static/css/poster.css" />
+    <link rel="stylesheet" href="static/css/industry.css" />
+
+
+    <!-- <link rel="stylesheet" href="https://gitcdn.xyz/repo/wingkwong/jquery-chameleon/master/src/chameleon.min.css"> -->
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+      href="static/css/Lato.css"
+      rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet" />
+    <link
+      href="static/css/Cuprum.css"
+      rel="stylesheet"
+    />
+    <link
+      href="static/css/Ambiant.css"
+      rel="stylesheet"
+    />
+    <title>IWAENC 2026: Sept-8</title>
+    
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="https://iwaenc2026.org/">
+          
+          <span class="brand-mark" aria-hidden="true">🔈</span>
+          
+        </a>
+        
+        <a class="navbar-brand site-title" href="https://iwaenc2026.org/">IWAENC 2026</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="calendar.html">Schedule</a>
+            </li>
+            
+            
+            
+            
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="industry.html">Sponsors</a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+        
+
+
+  
+
+  
+
+  
+
+  
+
+<ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a
+      id="calendar-html"
+      class="nav-link text-muted"
+      href="calendar.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Calendar
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_1-html"
+      class="nav-link text-muted"
+      href="day_1.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Sept-7
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_2-html"
+      class="nav-link text-muted"
+      href="day_2.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Sept-8
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_3-html"
+      class="nav-link text-muted"
+      href="day_3.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Sept-9
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_4-html"
+      class="nav-link text-muted"
+      href="day_4.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Sept-10
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<!---->
+<!--  -->
+<!--localcheck: Europe/Rome-->
+<!---->
+<!--finalchosen: Europe/Rome-->
+
+<div id="day">
+
+  
+
+  
+
+  
+    <h2 class="day-title" id=open>Opening</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Op" >
+            <h3 class="card-title main-title m-3 text-left">Opening</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Opening
+        </div>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          <p>Chair: Prof. Fabio Antonacci</p>
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 08:15-08:30 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+  <h2 class="day-title" id=all>Keynote Speaker</h2>
+  
+
+
+
+  
+
+
+
+
+<div class="row p-4">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5 mb-3 mb-md-0">
+            
+            <img src="static/images/speakers/boaz-rafaely.png" alt="Prof. Boaz Rafaely" width="100%" class="img-thumbnail speaker-card-image" />
+            
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                
+                <span class="main-title">
+                  Keynote 1 - Ambisonics Signal Processing: From Spherical Array Theory to Machine Learning Challenges 
+                </span>
+                
+              </h3>
+            </div>
+            
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Prof. Boaz Rafaely  /  Ben-Gurion University of the Negev
+              </span>
+            </div>
+            
+            <div class="m-3 text-left card-subtitle">
+              2026-09-08 | 08:30-09:30 (Europe/Rome)
+            </div>
+
+            <div class="m-3 text-center">
+            
+            </div>
+
+
+            
+            <div class="m-3">
+              Ambisonics is a versatile framework for spatial audio capture, encoding, and reproduction, with growing adoption in industry as the standard format for immersive spatial audio. Ambisonics is based on the spherical harmonics representation of sound fields, with its signal processing having evolved from classical spherical array theory to modern machine learning. This talk reviews Ambisonics encoding approaches as a means to generate Ambisonics signals from microphone recordings, first for spherical arrays, then for wearable arrays and arrays of unconstrained geometry using methods ranging from linear Ambisonics Signal Matching to neural network-based approaches that implicitly leverage information in the audio data. Neural network-based approaches, once incorporated into spatial audio applications, require loss functions that reflect auditory spatial perception, a topic of growing interest that also opens new challenges. These perceptual loss functions are particularly relevant to recent work on Ambisonics upscaling - moving beyond first-order to higher-order representations. Beyond upscaling, Ambisonics further extends to speech enhancement, both for improving spatial audio quality and, more broadly, for enabling array-agnostic processing through its modular, geometry-independent structure. Together, these topics illustrate the growing role of Ambisonics as a unifying representation in spatial audio and point to promising directions for future research.
+            </div>
+            
+            
+            <div class="ml-3 mr-3 mt-4 mb-3 h5">
+              Bio
+            </div>
+
+            <div class="m-3">
+              Boaz Rafaely is a Professor at Ben-Gurion University of the Negev in Israel, where he leads the Acoustics Laboratory, conducting research in spatial audio signal processing. He has published over 200 papers in journals and conferences, and is the author of the book Fundamentals of Spherical Array Processing. Prof. Rafaely has previously served as Head of the School of Electrical and Computer Engineering at BGU, Chair of the Israeli Acoustical Association, and Chair of the Technical Committee on Audio Signal Processing of the European Acoustical Association. He has also been an associate editor for IEEE Transactions on Audio, Speech and Language Processing, IEEE Signal Processing Letters, and Acta Acustica. He is an IEEE fellow.
+            </div>
+            
+
+
+<!--            <div class="ml-3 mr-3 mt-4 mb-3 h5 text-muted">-->
+<!--              Zoom links will be shared on Slack.-->
+<!--            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+    <h2 class="day-title" id=pos>Poster Sessions</h2>
+    
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Po" >
+            <h3 class="card-title main-title m-3 text-left">Poster Session 1</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Poster Session
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 09:30-11:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Po" >
+            <h3 class="card-title main-title m-3 text-left">Poster Session 2</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Poster Session
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 11:30-13:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Po" >
+            <h3 class="card-title main-title m-3 text-left">Poster Session 3</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Poster Session
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 15:00-16:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Po" >
+            <h3 class="card-title main-title m-3 text-left">Poster Session 4</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Poster Session
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 16:30-18:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+    
+  
+
+  
+    <h2 class="day-title" id=coffee>Coffee Breaks</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Co" >
+            <h3 class="card-title main-title m-3 text-left">Coffee Break</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Coffee Break
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 11:00-11:30 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Co" >
+            <h3 class="card-title main-title m-3 text-left">Coffee Break</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Coffee Break
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 16:00-16:30 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+    <h2 class="day-title" id=lunch>Lunch</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Lu" >
+            <h3 class="card-title main-title m-3 text-left">Lunch</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Lunch
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 13:00-15:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+    <h2 class="day-title" id=student>Student Activities</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="St" >
+            <h3 class="card-title main-title m-3 text-left">Student Activities</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Student Activities
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 13:00-15:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+
+  
+    <h2 class="day-title" id=demo>Demo Session</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="De" >
+            <h3 class="card-title main-title m-3 text-left">Demo Session</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Demo
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 16:30-18:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+
+  
+
+  
+    <h2 class="day-title" id=social>Social Events</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Cr" >
+            <h3 class="card-title main-title m-3 text-left">Cremona Guided Tour</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Social
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 18:30-20:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          <p>Starting from the Politecnico campus of Cremona, housed in the former Manfredini barracks, this guided walking tour invites participants on a gentle journey into the soul of the city. Step by step, the atmosphere shifts from the quiet charm of the academic setting to the vibrant pulse of Cremona’s historic center, revealing a landscape where past and present blend seamlessly. As the streets unfold, each corner hints at centuries of stories, craftsmanship, and culture, creating a sense of discovery that goes beyond what is seen. The walk becomes an experience of connection—between places, people, and traditions—leading participants toward the heart of the city in a relaxed and evocative atmosphere. More than a simple route, this tour is an invitation to feel Cremona: to absorb its rhythm, its elegance, and its timeless spirit, as the city gradually reveals itself along the way. Included in the registration fee.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Di" >
+            <h3 class="card-title main-title m-3 text-left">Dinner @ Juliette</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Social
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-08 | 20:00-23:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          <p>Shuttle bus from Cremona center right after the guided tour. Set in the elegant and intimate atmosphere of Juliette in Cremona, this exclusive dinner offers a moment of refined conviviality reserved for conference participants. Guests will be welcomed into a dedicated space, thoughtfully arranged to create a warm and engaging setting, where conversation and connection can unfold naturally. The evening will be enriched by live musical entertainment, adding a subtle yet captivating soundtrack that enhances the ambiance and reflects the city’s deep-rooted musical heritage. Each moment is designed to evoke a sense of harmony—between taste, sound, and shared experience. To ensure a seamless experience, a dedicated shuttle service will be available for both the outward and return journeys from Cremona’s city center, allowing participants to fully relax and enjoy the evening from beginning to end. Tickets available during the registration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+
+</div>
+
+<script src="static/js/schedule_nav.js"></script>
+<script src="static/js/anchor_offset.js"></script>
+
+
+      </div>
+    </div>
+    
+    
+
+    
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2026 IWAENC Organizing Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>

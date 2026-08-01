@@ -99,8 +99,12 @@ export const headerData = {
           href: getPermalink('/authors/registration'),
         },
         {
-          text: 'Program',
+          text: 'Program at a Glance',
           href: getPermalink('/attend/program'),
+        },
+        {
+          text: 'Technical Program',
+          href: getPermalink('/program/index.html'),
         },
         {
           text: 'Keynotes',

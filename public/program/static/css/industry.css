@@ -1,0 +1,56 @@
+.industry-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.industry-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  height: calc(100% - 3rem);
+  padding: 1.25rem;
+}
+
+.industry-card .image-wrapper {
+  cursor: pointer;
+  display: flex !important;
+  height: 116px;
+  justify-content: center;
+  max-width: 100%;
+  padding: 12px;
+  width: 100%;
+}
+
+.industry-card .image-wrapper:empty {
+  display: none !important;
+}
+
+.industry-card .image-wrapper img {
+  display: block;
+  height: 100%;
+  max-height: 92px;
+  max-width: 220px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.industry-card h3 {
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+@media (max-width: 575.98px) {
+  .industry-card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .industry-card .image-wrapper {
+    height: 104px;
+  }
+
+  .industry-card .image-wrapper img {
+    max-height: 82px;
+    max-width: 190px;
+  }
+}

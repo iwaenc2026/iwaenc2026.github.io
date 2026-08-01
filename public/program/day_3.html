@@ -1,0 +1,586 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/music.png">
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/custom.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+    <link rel="stylesheet" href="static/css/poster.css" />
+    <link rel="stylesheet" href="static/css/industry.css" />
+
+
+    <!-- <link rel="stylesheet" href="https://gitcdn.xyz/repo/wingkwong/jquery-chameleon/master/src/chameleon.min.css"> -->
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+      href="static/css/Lato.css"
+      rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet" />
+    <link
+      href="static/css/Cuprum.css"
+      rel="stylesheet"
+    />
+    <link
+      href="static/css/Ambiant.css"
+      rel="stylesheet"
+    />
+    <title>IWAENC 2026: Sept-9</title>
+    
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="https://iwaenc2026.org/">
+          
+          <span class="brand-mark" aria-hidden="true">🔈</span>
+          
+        </a>
+        
+        <a class="navbar-brand site-title" href="https://iwaenc2026.org/">IWAENC 2026</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="calendar.html">Schedule</a>
+            </li>
+            
+            
+            
+            
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="industry.html">Sponsors</a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+        
+
+
+  
+
+  
+
+  
+
+  
+
+<ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a
+      id="calendar-html"
+      class="nav-link text-muted"
+      href="calendar.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Calendar
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_1-html"
+      class="nav-link text-muted"
+      href="day_1.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Sept-7
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_2-html"
+      class="nav-link text-muted"
+      href="day_2.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Sept-8
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_3-html"
+      class="nav-link text-muted"
+      href="day_3.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Sept-9
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_4-html"
+      class="nav-link text-muted"
+      href="day_4.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Sept-10
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<!---->
+<!--  -->
+<!--localcheck: Europe/Rome-->
+<!---->
+<!--finalchosen: Europe/Rome-->
+
+<div id="day">
+
+  
+
+  
+
+  
+
+  
+  <h2 class="day-title" id=all>Keynote Speaker</h2>
+  
+
+
+
+  
+
+
+
+
+<div class="row p-4">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5 mb-3 mb-md-0">
+            
+            <img src="static/images/speakers/mounya-elhilali.jpg" alt="Prof. Mounya Elhilali" width="100%" class="img-thumbnail speaker-card-image" />
+            
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                
+                <span class="main-title">
+                  Keynote 2 - Organizing the Acoustic World: Computational Principles of Auditory Attention
+                </span>
+                
+              </h3>
+            </div>
+            
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Prof. Mounya Elhilali  /  Johns Hopkins University
+              </span>
+            </div>
+            
+            <div class="m-3 text-left card-subtitle">
+              2026-09-09 | 08:30-09:30 (Europe/Rome)
+            </div>
+
+            <div class="m-3 text-center">
+            
+            </div>
+
+
+            
+            <div class="m-3">
+              The ability to navigate complex acoustic environments depends on more than recognizing sounds. It requires identifying what is behaviorally relevant, organizing sensory inputs into meaningful objects, and adapting to changing goals and contexts. This talk will examine the computational principles that support these abilities, drawing on studies of auditory attention, predictive processing, and auditory scene analysis. I will present behavioral and neural evidence illustrating how top-down goals, statistical learning, and bottom-up organization interact to shape auditory representations and guide selective listening in natural acoustic scenes. I will conclude by discussing how these same principles are beginning to influence modern audio systems, offering opportunities for closer integration between auditory neuroscience and machine listening.
+            </div>
+            
+            
+            <div class="ml-3 mr-3 mt-4 mb-3 h5">
+              Bio
+            </div>
+
+            <div class="m-3">
+              Mounya Elhilali received her Ph.D. degree in Electrical and Computer Engineering from the University of Maryland, College Park in 2004. She is the Charles Renn faculty scholar and professor of Electrical and Computer Engineering at the Johns Hopkins University, with joint appointment in the department of Psychology and Brain Sciences. She directs the Laboratory for Computational Audio Perception and is affiliated with the center for speech and language processing, the center for hearing and balance and the Kavli neuroscience institute. Her research examines sound processing by humans and machines in noisy soundscapes, and investigates reverse engineering intelligent processing of sounds by brain networks with applications to speech and audio technologies and medical diagnostic systems. Dr. Elhilali is the recipient of the National Science Foundation CAREER award and the Office of Naval Research Young Investigator award. She was recognized as outstanding woman innovator by the Johns Hopkins tech ventures in 2020.
+            </div>
+            
+
+
+<!--            <div class="ml-3 mr-3 mt-4 mb-3 h5 text-muted">-->
+<!--              Zoom links will be shared on Slack.-->
+<!--            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+    <h2 class="day-title" id=pos>Poster Sessions</h2>
+    
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Po" >
+            <h3 class="card-title main-title m-3 text-left">Poster Session 5</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Poster Session
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-09 | 09:30-11:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Po" >
+            <h3 class="card-title main-title m-3 text-left">Poster Session 6</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Poster Session
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-09 | 12:30-13:30 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+    
+  
+
+  
+    <h2 class="day-title" id=coffee>Coffee Breaks</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Co" >
+            <h3 class="card-title main-title m-3 text-left">Coffee Break</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Coffee Break
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-09 | 11:00-11:30 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+    <h2 class="day-title" id=lunch>Lunch</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="Lu" >
+            <h3 class="card-title main-title m-3 text-left">Lunch</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Lunch
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-09 | 13:30-14:15 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+
+  
+    <h2 class="day-title" id=student_best>Student Best Paper Competition</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="St" >
+            <h3 class="card-title main-title m-3 text-left">Student Best Paper Competition - Part 1</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Student Best Paper Competition
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-09 | 11:30-12:30 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+
+  
+
+  
+
+  
+    <h2 class="day-title" id=social>Social Events</h2>
+    <div class="cards row p-4">
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 120px; width: 100%;"
+      >
+        
+          <a id="So" >
+            <h3 class="card-title main-title m-3 text-left">Social Program (Lake Iseo + Museo Auto Storiche + Dinner)</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          Social
+        </div>
+        
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2026-09-09 | 14:15-23:00 (Europe/Rome)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          <p>Discover the charm of Lake Iseo through an experience designed to inspire and enchant. Departing from Cremona after lunch, participants will be comfortably accompanied on a journey that unfolds across one of Northern Italy’s most evocative landscapes, where water, light, and tradition blend into a uniquely serene atmosphere. The excursion invites guests to embrace the gentle rhythm of the lake, surrounded by timeless scenery and a sense of quiet wonder that defines this hidden gem. Lake Iseo is home to Montisola, the largest inhabited lake island in Europe, as well as the two small islands of Loreto and San Paolo. The excursion includes a tour around all three islands (Montisola, Loreto, and San Paolo, thus covering the entire Lake Iseo), with a stop and free time to explore Peschiera Maraglio, a picturesque village located on the southeastern tip of Montisola. Founded in the early Middle Ages as a fishing outpost of Iseo, it is one of the island’s most important centers and undoubtedly its most iconic image. It lies at the foot of extensive coppice woods and cypress groves that stretch across the island’s broad eastern slope. As the day transitions into evening, the experience continues in Brescia at the Museo Auto Storiche —once the renowned Mille Miglia Museum—an iconic space that celebrates movement, elegance, and the spirit of innovation. Within its evocative setting, where history and passion for engineering come alive, guests will enjoy a memorable dinner immersed in a truly distinctive ambiance. Round-trip transportation from Cremona is included, ensuring a seamless and relaxing experience that allows participants to fully enjoy every moment of this captivating journey. Included in the registration fee.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+
+</div>
+
+<script src="static/js/schedule_nav.js"></script>
+<script src="static/js/anchor_offset.js"></script>
+
+
+      </div>
+    </div>
+    
+    
+
+    
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2026 IWAENC Organizing Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>
