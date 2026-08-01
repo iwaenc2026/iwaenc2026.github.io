@@ -209,7 +209,8 @@ export const footerData = {
       title: 'Attend',
       links: [
         { text: 'Registration', href: '/authors/registration' },
-        { text: 'Program', href: '/attend/program' },
+        { text: 'Program at a Glance', href: '/attend/program' },
+        { text: 'Technical Program', href: '/program/index.html' },
         { text: 'Keynotes', href: '/attend/keynotes' },
         { text: 'Social Program', href: '/attend/social-program' },
         { text: 'Student Activities', href: '/attend/student-meetup' },
