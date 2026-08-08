@@ -2,6 +2,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,32 +66,16 @@
       href="static/css/Ambiant.css"
       rel="stylesheet"
     />
-    <title>IWAENC 2026: Schedule</title>
+    <title>IWAENC 2026: Papers</title>
     
-<script src="https://cdn.jsdelivr.net/npm/ical.js@1.4.0/build/ical.min.js" integrity="sha256-iFbWWsVYU6rIgbq5wJc4mp8zvV3SkqupxgH/7a9PanY=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment@2.26.0/dist/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.31/builds/moment-timezone-with-data-10-year-range.min.js" integrity="sha256-Dx3P9LwbB/WuS+7Xv37Y+qcPS/14AwFH653Pw80AOhY=" crossorigin="anonymous"></script>
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.css"
-/>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/tui-code-snippet@1.5.2/dist/tui-code-snippet.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tui-dom@3.0.0/dist/tui-dom.min.js" integrity="sha256-Ha3QUAK/d/Z2BMN/hDoBjwP0Q0f5uS9MploTRSLqrLI=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.js"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/css/bootstrap-select.min.css"
-/>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/js/bootstrap-select.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<script src="static/js/icons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
-<script src="static/js/lazy_load.js"></script>
-<script src="static/js/little_helpers.js"></script>
-<script type="text/javascript" src="static/js/calendar.js"></script>
+<meta id="release-day" data-name="3" data-other="">
+<meta id="browse-buttons" data-name="0" data-other="">
 
   </head>
 
@@ -104,7 +89,7 @@
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="https://iwaenc2026.org/">
           
-          <span class="brand-mark" aria-hidden="true">🔈</span>
+          <span class="brand-mark" aria-hidden="true">🔊</span>
           
         </a>
         
@@ -128,11 +113,15 @@
           <ul class="navbar-nav ml-auto">
             
             
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link" href="calendar.html">Schedule</a>
             </li>
             
             
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
             
             
             
@@ -156,153 +145,171 @@
       <div class="tabs">
         
 
-
-  
-
-  
-
-  
-
-  
-
-<ul class="nav nav-pills justify-content-center">
-  
-  <li class="nav-item">
-    <a
-      id="calendar-html"
-      class="nav-link text-muted"
-      href="calendar.html"
-      aria-controls="nav-home"
-      aria-selected="true"
-      >Calendar
-    </a>
-  </li>
-  
-  <li class="nav-item">
-    <a
-      id="day_1-html"
-      class="nav-link text-muted"
-      href="day_1.html"
-      aria-controls="nav-home"
-      aria-selected="true"
-      >Sept-7
-    </a>
-  </li>
-  
-  <li class="nav-item">
-    <a
-      id="day_2-html"
-      class="nav-link text-muted"
-      href="day_2.html"
-      aria-controls="nav-home"
-      aria-selected="true"
-      >Sept-8
-    </a>
-  </li>
-  
-  <li class="nav-item">
-    <a
-      id="day_3-html"
-      class="nav-link text-muted"
-      href="day_3.html"
-      aria-controls="nav-home"
-      aria-selected="true"
-      >Sept-9
-    </a>
-  </li>
-  
-  <li class="nav-item">
-    <a
-      id="day_4-html"
-      class="nav-link text-muted"
-      href="day_4.html"
-      aria-controls="nav-home"
-      aria-selected="true"
-      >Sept-10
-    </a>
-  </li>
-  
-</ul>
-
       </div>
       <!-- Content -->
       <div class="content">
         
-<!---->
-<!--  -->
-<!--localcheck: Europe/Rome-->
-<!---->
-<!--finalchosen: Europe/Rome-->
+<div class="row p-3"></div>
 
-<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-  <!-- Calender tab -->
+<!-- Session -->
+<div class="row d-none session_notice">
   <div
-    class="tab-pane active"
-    id="tab-calendar"
-    role="tabpanel"
-    aria-labelledby="nav-profile-tab"
+    class="alert alert-warning alert-dismissible fade show col-12"
+    role="alert"
   >
-    <div class="row d-flex align-items-center">
-      <div class="col-12 col-md-6 mb-3">
-        <span class="text-muted">All times are shown in the Europe/Rome time zone (CEST, UTC+2).</span>
-      </div>
-      <div class="col-12 col-md-6 mb-3">
-        <a class="btn btn-light float-right" href="IWAENC_2026.ics" download="IWAENC_2026.ics" role="button">Download Calendar<svg width="1em" height="1em" viewBox="0 0 16 16" class="ml-1 bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-            <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- full cal for browser-->
-    <div id="calendar" class="d-none d-sm-block"></div>
-
-    <!-- small cal for smart phones-->
-    <div id="calendar_small" class="d-sm-none"></div>
-
-    <script type="text/javascript">
-
-      make_cal("serve_main_calendar.json");
-
-    </script>
+    Showing papers for session
+    <span id="session_name" style="font-weight: bold;"></span>.
+    <button
+      type="button"
+      class="close remove_session"
+      data-dismiss="alert"
+      aria-label="Close"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
-  <script src="static/js/schedule_nav.js"></script>
 </div>
 
+<!-- Buttons -->
+<div class="row">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control typeahead_all"
+        placeholder="Search"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary typeahead_all_clear"
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="col-12 col-sm-6 col-md-6 col-lg-4 text-center mb-3">
+    <div class="btn-group btn-group-toggle filter_option">
+      <label
+        class="btn btn-outline-secondary"
+        data-tippy-content="Search for papers titles"
+      >
+        <input
+          type="radio"
+          name="options"
+          value="titles"
+          autocomplete="off"
+          checked
+        />
+        title
+      </label>
+      <label
+        class="btn btn-outline-secondary"
+        data-tippy-content="Search for papers with specific keywords"
+      >
+        <input
+          type="radio"
+          name="options"
+          value="keywords"
+          autocomplete="off"
+        />
+        keyword
+      </label>
+      <label
+        class="btn btn-outline-secondary active"
+        data-tippy-content="Search for papers from specific authors"
+      >
+        <input type="radio" name="options" value="authors" autocomplete="off" />
+        author
+      </label>
+      <!-- <label
+        class="btn btn-outline-secondary"
+        data-tippy-content="Search for papers from specific session"
+      >
+        <input type="radio" name="options" value="session_name" autocomplete="off" />
+        session
+      </label> -->
+    </div>
+  </div>
+  <div class="col-12 col-lg-4 mb-3">
+    <button class="btn btn-outline-secondary reshuffle">shuffle</button>
+    <div class="float-right">
+      <div
+        class="btn-group btn-group-toggle render_option"
+        data-toggle="buttons"
+      >
+        <label class="btn btn-outline-secondary active">
+          <input type="radio" name="options" value="list" autocomplete="off" />
+          list
+        </label>
+        <label class="btn btn-outline-secondary active">
+          <input
+            type="radio"
+            name="options"
+            value="compact"
+            autocomplete="off"
+            checked
+          />
+          compact
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input
+            type="radio"
+            name="options"
+            value="detail"
+            autocomplete="off"
+          />
+          detail
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
+    <span>Session: </span>
+    <select id="session-select" onchange="sessionSearch()">
+      <option value="">All</option>
+
+    </select>
+  </div>
+<!--  <div class="video-day-buttons mb-3 col-lg-8 text-right">-->
+<!--    <a class="btn btn-outline-primary" href="http://ismir-explorer.ai.ovgu.de/2020/">ISMIR Explorer</a>-->
+<!--  </div>-->
+
+</div>
+
+
+<!-- Cards -->
+<div class="cards row papers-cards"></div>
+<script src="static/js/little_helpers.js"></script>
+<script src="static/js/lazy_load.js"></script>
+<script src="static/js/persistor.js"></script>
+<script src="static/js/papers.js"></script>
+<script>
+  $(document).ready(function () {
+    tippy("[data-tippy-content]", { trigger: "mouseenter focus" });
+    start();
+  });
+</script>
+
+
       </div>
     </div>
     
     
 
-    
+<div
+  class="gdpr bg-dark text-light"
+  style="padding: 10pt; position: fixed; bottom: 0; display: none;"
+>
+  We use cookies to store which papers have been visited.
+  <div class="gdpr-btn btn btn-sm btn-info" style="margin-left: 15pt;">
+    I agree
+  </div>
+</div>
+<script src="static/js/gdpr_cookies.js"></script>
 
-    <!-- Footer -->
-    <footer class="footer bg-light p-4">
-      <div class="container">
-        <p class="float-right"><a href="#">Back to Top</a></p>
-        <p class="text-center">© 2026 IWAENC Organizing Committee</p>
-      </div>
-    </footer>
 
-    <!-- Code for hash tags -->
-    <script type="text/javascript">
-      $(document).ready(function () {
-        if (location.hash !== "") {
-          $('a[href="' + location.hash + '"]').tab("show");
-        }
-
-        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
-          var hash = $(e.target).attr("href");
-          if (hash.substr(0, 1) == "#") {
-            var position = $(window).scrollTop();
-            location.replace("#" + hash.substr(1));
-            $(window).scrollTop(position);
-          }
-        });
-      });
-    </script>
-    <script src="static/js/lazy_load.js"></script>
-    
   </body>
 </html>
