@@ -89,6 +89,10 @@ export const headerData = {
           text: 'Presentation Guidelines',
           href: getPermalink('/authors/presentation-guidelines'),
         },
+        {
+          text: 'Printing service',
+          href: getPermalink('/authors/printing-service'),
+        },
       ],
     },
     {
