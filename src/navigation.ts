@@ -91,7 +91,7 @@ export const headerData = {
         },
         {
           text: 'Printing service',
-          href: getPermalink('/authors/printing-service'),
+          href: getPermalink('/authors/poster-printing'),
         },
       ],
     },
