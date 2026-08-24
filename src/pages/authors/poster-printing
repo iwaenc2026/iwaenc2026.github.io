@@ -1,0 +1,79 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+
+const metadata = {
+  title: 'Poster printing service',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Authors"
+    title="Poster printing service"
+    subtitle="In order to simplify the logistics of your travel, a printing service in Cremona is available."
+    image={{
+      src: '~/assets/images/poster.jpg',
+        alt: "Poster",
+    }}
+  />
+
+
+<!-- Features2 Widget ************** -->
+    <!-- Features2 Widget ************** -->
+    <Features2
+            title="Poster files"
+            subtitle="Format of the files"
+            tagline="More on"
+            columns={1}
+            items={[
+                {
+                    title: '',
+                    description: '<b>File format for printing</b><br>\n' +
+                        'Remember that poster boards measure 1 m (W) × 2 m (H). Please ensure that your poster fits within these dimensions.\n<br><br>' +
+                        '<b>Poster Guidelines\n</b><br>' +
+                        'Please ensure that your poster complies with the presentation guidelines provided on the relevant webpage.\n<br>' +
+                        '<b>File format</b><br>' +
+                        'The file must be saved in PDF format. Please preview the poster carefully before submitting it to the printing service to ensure that it is correctly formatted and ready for printing.\n<br>',+
+                        '<b>File transfer</b><br>'+
+                        'Once your poster is complete and ready for printing, if you wish to use the printing service, please send the PDF file to elena@pitre.it. After sending it, please confirm that the file has been successfully received. If the attachment cannot be delivered due to its size, please use a large-file transfer service instead.<br>'+
+                        '<b>Printing confirmation</b>'+
+                        'After submitting your poster by email, you will receive a confirmation specifying the cost of the printing service and the date from which your poster will be available for collection.<br>'+
+                        'The printing service is provided by Studio Pi-Tre Progettazione Grafica, located at Via Rosario 4/G, 26100 Cremona (CR), Italy.<br>'+
+                        'Please complete the above steps a few days before September 7 to ensure that your poster is printed and ready for collection in time.'
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+
+  <!-- Steps Widget ****************** -->
+
+
+  <!--
+  <CallToAction
+    title="To be added"
+    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Download Template',
+        href: 'https://github.com/arthelokyo/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  /> -->
+</Layout>
