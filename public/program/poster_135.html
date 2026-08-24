@@ -76,13 +76,13 @@
 <meta name="citation_publication_date" content="2026-09-07" />
 <meta name="citation_conference_title" content="19th International Workshop On Acoustic Signal Enhancement" />
 <meta name="citation_inbook_title" content="Proceedings of IWAENC 2026" />
-<meta name="citation_abstract" content="" />
+<meta name="citation_abstract" content="Conv-TasNet is often presented as a neural time-domain separator, but its design is deeply rooted in acoustic signal processing: a learned analysis-synthesis filter bank replaces the STFT, masking is retained as the separation mechanism, and temporal convolutions implement structured finite-impulse-response filtering. This paper studies Conv-TasNet through singular value decomposition (SVD). For depthwise temporal convolutions, we view each filter as a Toeplitz operator, linking its singular spectrum to the filter frequency response through Szeg˝o-type theory. For pointwise 1 × 1 convolutions, we analyze the evolution of singular values and singular subspaces during training, showing rapid early spectral concentration and progressive stabilization. We then summarize a low-rank factorization scheme for the pointwise layers. On Libri2Mix, truncation near the effective rank gives the strongest compression-performance trade-off, while more aggressive truncation degrades gracefully. These results position Conv-TasNet as both an interpretable signal-processing architecture and a compressible low-rank model." />
 
 <meta name="citation_keywords" content="New and emerging topics in speech and audio processing" />
 
 <meta name="citation_keywords" content="Speaker separation, extraction and diarization" />
 
-<meta name="citation_pdf_url" content="" />
+
 <meta id="yt-id" data-name= />
 <meta id="bb-id" data-name= />
 
@@ -218,7 +218,7 @@
       <div class="card-text">
         <div id="abstractExample">
           <span class="font-weight-bold">Abstract:</span>
-          
+          <p>Conv-TasNet is often presented as a neural time-domain separator, but its design is deeply rooted in acoustic signal processing: a learned analysis-synthesis filter bank replaces the STFT, masking is retained as the separation mechanism, and temporal convolutions implement structured finite-impulse-response filtering. This paper studies Conv-TasNet through singular value decomposition (SVD). For depthwise temporal convolutions, we view each filter as a Toeplitz operator, linking its singular spectrum to the filter frequency response through Szeg˝o-type theory. For pointwise 1 × 1 convolutions, we analyze the evolution of singular values and singular subspaces during training, showing rapid early spectral concentration and progressive stabilization. We then summarize a low-rank factorization scheme for the pointwise layers. On Libri2Mix, truncation near the effective rank gives the strongest compression-performance trade-off, while more aggressive truncation degrades gracefully. These results position Conv-TasNet as both an interpretable signal-processing architecture and a compressible low-rank model.</p>
         </div>
       </div>
       <p></p>
@@ -226,8 +226,11 @@
   </div>
   <div id="paper" class="collapse">
     
-    <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
-    <iframe class="fullscreen-iframe" src = "#embedded=true" width='100%' height='500px' allowfullscreen webkitallowfullscreen></iframe>
+    <div class="pp-card m-3">
+      <div class="card-body">
+        <p class="card-text mb-0">Paper PDF not available yet.</p>
+      </div>
+    </div>
     
   </div>
 </div>

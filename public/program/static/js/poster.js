@@ -9,7 +9,10 @@ $('.poster-buttons button').on('click', function() {
 });
 
 $('.fullscreen-button').on('click', function() {
-  fullscreen($(this).next('.fullscreen-iframe')[0])
+  var frame = $(this).siblings('.fullscreen-iframe')[0] || $(this).next('.fullscreen-iframe')[0];
+  if (frame) {
+    fullscreen(frame);
+  }
 })
 // var button = document.querySelector('#fullscreen-button');
 //
@@ -26,6 +29,10 @@ document.addEventListener('fullscreenchange', fullscreenChange);
 document.addEventListener('MSFullscreenChange', fullscreenChange);
 
 function fullscreen(frame) {
+  if (!frame) {
+    return;
+  }
+
   // check if fullscreen mode is available
   if (document.fullscreenEnabled ||
     document.webkitFullscreenEnabled ||
@@ -63,7 +70,9 @@ function fullscreenChange() {
   // force to reload iframe once to prevent the iframe source didn't care about trying to resize the window
   // comment this line and you will see
   var iframe = document.querySelector('iframe');
-  iframe.src = iframe.src;
+  if (iframe && iframe.src) {
+    iframe.src = iframe.src;
+  }
 }
 
 

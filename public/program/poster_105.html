@@ -76,7 +76,36 @@
 <meta name="citation_publication_date" content="2026-09-07" />
 <meta name="citation_conference_title" content="19th International Workshop On Acoustic Signal Enhancement" />
 <meta name="citation_inbook_title" content="Proceedings of IWAENC 2026" />
-<meta name="citation_abstract" content="" />
+<meta name="citation_abstract" content="Standard speech enhancement (SE) evaluation relies on
+signal-level metrics such as PESQ and SI-SNR. These track
+downstream model performance well under additive noise,
+but we show they break down under convolutive distor-
+tion, where the relevant question is whether the enhanced
+signal preserves task-relevant structure rather than wave-
+form fidelity. We propose TARG-Speech, a clean-referenced
+representation-space diagnostic that projects wav2vec 2.0
+embeddings into a linear discriminant analysis (LDA) space
+fitted on labeled clean training data of PERCEPT-R, and
+quantifies label-wise class separability there. Across the non-
+clean condition × processing-state panels in our benchmark,
+the Q1–Q4 centroid distance in LDA space is strongly asso-
+ciated with downstream macro-F1 with Spearman ρ = 0.954
+over n = 35 panels. As the subspace comes from a dis-
+joint speaker-independent partition, this association is out-
+of-sample. The comparison is two-regime: under additive
+noise PESQ, STOI and SI-SNR match or beat it, whereas
+under reverberation STOI and SI-SNR become uninforma-
+tive (−0.333, 0.048), PESQ retains no significant association
+(0.476), and only the geometry remains significantly associ-
+ated with downstream performance (0.952). The same pattern
+holds for the binary-label LDA-space silhouette across three
+self-supervised learning (SSL) backbones (wav2vec 2.0, Hu-
+BERT, WavLM; ρ = 0.929–0.963). The best front-end per
+regime recovers 39–50% of the clean-to-degraded gap under
+noise but only 17–19% under reverberation, and one system
+falls below the degraded baseline under noise. Supervised
+by task-aligned clean labels, the diagnostic complements
+classifier-based evaluation rather than replacing it." />
 
 <meta name="citation_keywords" content="New and emerging topics in speech and audio processing" />
 
@@ -84,7 +113,7 @@
 
 <meta name="citation_keywords" content="Noise reduction" />
 
-<meta name="citation_pdf_url" content="" />
+
 <meta id="yt-id" data-name= />
 <meta id="bb-id" data-name= />
 
@@ -226,7 +255,36 @@
       <div class="card-text">
         <div id="abstractExample">
           <span class="font-weight-bold">Abstract:</span>
-          
+          <p>Standard speech enhancement (SE) evaluation relies on
+signal-level metrics such as PESQ and SI-SNR. These track
+downstream model performance well under additive noise,
+but we show they break down under convolutive distor-
+tion, where the relevant question is whether the enhanced
+signal preserves task-relevant structure rather than wave-
+form fidelity. We propose TARG-Speech, a clean-referenced
+representation-space diagnostic that projects wav2vec 2.0
+embeddings into a linear discriminant analysis (LDA) space
+fitted on labeled clean training data of PERCEPT-R, and
+quantifies label-wise class separability there. Across the non-
+clean condition × processing-state panels in our benchmark,
+the Q1–Q4 centroid distance in LDA space is strongly asso-
+ciated with downstream macro-F1 with Spearman ρ = 0.954
+over n = 35 panels. As the subspace comes from a dis-
+joint speaker-independent partition, this association is out-
+of-sample. The comparison is two-regime: under additive
+noise PESQ, STOI and SI-SNR match or beat it, whereas
+under reverberation STOI and SI-SNR become uninforma-
+tive (−0.333, 0.048), PESQ retains no significant association
+(0.476), and only the geometry remains significantly associ-
+ated with downstream performance (0.952). The same pattern
+holds for the binary-label LDA-space silhouette across three
+self-supervised learning (SSL) backbones (wav2vec 2.0, Hu-
+BERT, WavLM; ρ = 0.929–0.963). The best front-end per
+regime recovers 39–50% of the clean-to-degraded gap under
+noise but only 17–19% under reverberation, and one system
+falls below the degraded baseline under noise. Supervised
+by task-aligned clean labels, the diagnostic complements
+classifier-based evaluation rather than replacing it.</p>
         </div>
       </div>
       <p></p>
@@ -234,8 +292,11 @@
   </div>
   <div id="paper" class="collapse">
     
-    <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
-    <iframe class="fullscreen-iframe" src = "#embedded=true" width='100%' height='500px' allowfullscreen webkitallowfullscreen></iframe>
+    <div class="pp-card m-3">
+      <div class="card-body">
+        <p class="card-text mb-0">Paper PDF not available yet.</p>
+      </div>
+    </div>
     
   </div>
 </div>
