@@ -86,7 +86,7 @@ export const headerData = {
           href: getPermalink('/authors/sub'),
         },
         {
-          text: 'Presentation Guidelines',
+          text: 'Poster Presentation Guidelines',
           href: getPermalink('/authors/presentation-guidelines'),
         },
         {
@@ -206,7 +206,7 @@ export const footerData = {
       title: 'Authors',
       links: [
         { text: 'Paper Submission', href: '/authors/sub' },
-        { text: 'Presentation Guidelines', href: '/authors/presentation-guidelines' },
+        { text: 'Poster Presentation Guidelines', href: '/authors/presentation-guidelines' },
         { text: 'Poster Printing Service', href: '/authors/poster-printing' },
       ],
     },
