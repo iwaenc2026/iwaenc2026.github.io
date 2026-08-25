@@ -90,6 +90,10 @@ export const headerData = {
           href: getPermalink('/authors/presentation-guidelines'),
         },
         {
+          text: 'Oral Presentation Guidelines',
+          href: getPermalink('/authors/oral-pres-guidelines'),
+        },
+        {
           text: 'Poster Printing Service',
           href: getPermalink('/authors/poster-printing'),
         },
@@ -207,6 +211,7 @@ export const footerData = {
       links: [
         { text: 'Paper Submission', href: '/authors/sub' },
         { text: 'Poster Presentation Guidelines', href: '/authors/presentation-guidelines' },
+        { text: 'Oral Presentation Guidelines', href: '/authors/oral-pres-guidelines' },
         { text: 'Poster Printing Service', href: '/authors/poster-printing' },
       ],
     },
