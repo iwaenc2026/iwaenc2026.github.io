@@ -1,0 +1,78 @@
+---
+import Features from '../../components/widgets/Features.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Stats from '../../components/widgets/Stats.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from "../../components/widgets/Content.astro";
+
+const metadata = {
+  title: 'Oral presentation guidelines',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Authors"
+    title="Oral presentation guidelines"
+    subtitle="Best paper candidates will be presented both in oral and poster sessions. This page provides instructions for preparing the oral presentation."
+    image={{
+      src: '~/assets/images/print.jpeg',
+        alt: "Presentation",
+    }}
+  />
+
+
+<!-- Features2 Widget ************** -->
+    <!-- Features2 Widget ************** -->
+    <Features2
+            title="Oral presentation informaiton"
+            subtitle="Take a look at how to organize your presentation and the logistics of the conference venue."
+            tagline="More on"
+            columns={1}
+            items={[
+                {
+                    title: '',
+                    description: '<b>Presentation duration</b><br>' +
+                        'The overall time available for each oral presentation will be 15 minutes, inclusive of the switch between presenters and a short Q&A session.\n<br><br>' +
+                        '<b>Presentation guidelines Guidelines\n</b><br>' +
+                        'Presentation time is critical: each paper is allocated 15 minutes for lecture sessions, including time for questions and any set-up not completed in advance.\n<br><br>' 
+                        'Keep slides simple and easy to read — they should attract and hold attention and reinforce what you say.\n<br>'+
+                        'Be prepared to begin your presentation as soon as the prior presenter has finished, to keep the session on schedule.\n<br>'+
+                        'Meet with your session chair during the break immediately prior to your session, inside or near the door of the presentation room..\n<br>'+
+                        '<b>Hardware</b><br>' +
+                        'The plenary room is equipped with a video wall with a resolution of 3520 × 1980 pixels and a 16:9 aspect ratio.<br><br>'+
+                        'Presenters may use either their own laptop or the computer provided by the conference organizers. Those wishing to use the conference computer have to upload and test their presentation in advance.<br><br>'+
+                        'The video wall supports both video and audio connections via an HDMI cable that you will find on the desk. No other connection cables will be provided.<br><br>',
+                    icon: '',
+                },
+            ]}
+    >
+        <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Features2>
+
+
+  <!-- Steps Widget ****************** -->
+
+
+  <!--
+  <CallToAction
+    title="To be added"
+    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Download Template',
+        href: 'https://github.com/arthelokyo/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  /> -->
+</Layout>
