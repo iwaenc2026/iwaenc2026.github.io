@@ -18,6 +18,17 @@ let uniqueSessions = null;
 let release_day = $('#release-day').data()['name'];
 let browse_paper_buttons = $('#browse-buttons').data()['name'];
 
+const compareSessions = (a, b) => {
+    const aText = String(a);
+    const bText = String(b);
+    const aNumeric = /^\d+$/.test(aText);
+    const bNumeric = /^\d+$/.test(bText);
+    if (aNumeric && bNumeric) return Number(aText) - Number(bText);
+    if (aNumeric) return -1;
+    if (bNumeric) return 1;
+    return aText.localeCompare(bText);
+}
+
 let slack_svg =  `<svg style="display: inline-block; width: 23px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="75 75 150 150" style="enable-background:new 0 0 270 270;" xml:space="preserve">
 <style type="text/css">
@@ -176,7 +187,7 @@ const start = () => {
         allPapers = papers;
         calcAllKeys(allPapers, allKeys);
         uniqueSessions = [...new Set(allKeys['session'])];
-        uniqueSessions = uniqueSessions.sort((a,b) => a - b);
+        uniqueSessions = uniqueSessions.sort(compareSessions);
         console.log(uniqueSessions);
         populateSessionSelect(uniqueSessions);
         setTypeAhead(urlFilter,
@@ -314,6 +325,9 @@ const card_cal = (openreview, i) => `<a class="text-muted" href="webcal://iclr.g
 //language=HTML
 const card_html = (openreview) => {
   var button = ''
+  const awardBadge = openreview.content.award_nominee
+    ? `<br><span class="badge badge-primary mt-2">${openreview.content.award_nominee}</span>`
+    : ''
   if (release_day >= openreview.content.day && browse_paper_buttons) {
     button += '<div class="text-right"><a class="btn btn-primary slack-btn mt-3 mb-3" href="'
     button += ''
@@ -331,6 +345,7 @@ const card_html = (openreview) => {
                         ${openreview.content.authors.join(', ')}
                         <br><br>
                       <em>Presented ${openreview.content.paper_presentation}</em>
+                      ${awardBadge}
                 </h6>
                 ${card_image(openreview, render_mode !== 'list')}
                 ` + button +
