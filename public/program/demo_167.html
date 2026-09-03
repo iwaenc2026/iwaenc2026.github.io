@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,28 +66,26 @@
       href="static/css/Ambiant.css"
       rel="stylesheet"
     />
-    <title>IWAENC 2026: Dereverberation Using Deep Internal Learning: Speech Enhancement and ASR Evaluation</title>
+    <title>IWAENC 2026: Interactive Graph-based 6DoF Ambisonic Rendering from Sparse Microphone Arrays</title>
     
-<meta name="citation_title" content="Dereverberation Using Deep Internal Learning: Speech Enhancement and ASR Evaluation" />
+<meta name="citation_title" content="Interactive Graph-based 6DoF Ambisonic Rendering from Sparse Microphone Arrays" />
 
-<meta name="citation_author" content="Zhang, Yuxi*" />
+<meta name="citation_author" content="Gioele Greco*" />
 
-<meta name="citation_author" content="A. Naylor, Patrick" />
+<meta name="citation_author" content="Filippo Marri" />
+
+<meta name="citation_author" content="Mirco Pezzoli" />
+
+<meta name="citation_author" content="Fabio Antonacci" />
 
 <meta name="citation_publication_date" content="2026-09-07" />
 <meta name="citation_conference_title" content="19th International Workshop On Acoustic Signal Enhancement" />
-<meta name="citation_inbook_title" content="Proceedings of IWAENC 2026" />
-<meta name="citation_abstract" content="Reverberation degrades both perceptual speech quality and downstream Automatic Speech Recognition (ASR). This paper extends our prior work on Deep Internal Learning (DIL) for single-channel speech dereverberation to a downstream ASR setting. The proposed method trains an utterance-specific multi-scale frequency-band Convolutional Neural Network (CNN) on pseudo pairs derived solely from the reverberant input, requiring neither external data nor pretrained models. We evaluate on LibriSpeech test-clean convolved with measured Room Impulse Responses (RIRs) from three rooms with a wide T60 range, assessing both signal-level and recognition metrics under matched and mismatched degradation-prior configurations. The findings characterise the conditions under which DIL provides reliable ASR benefit and identify prior accuracy as a key determinant of recognition performance." />
+<meta name="citation_abstract" content="This demonstration presents a real-time, interactive system for wide-area six-degrees-of-freedom (6DoF) Ambisonic rendering from a sparse set of first-order Ambisonic microphone arrays. The system implements a graph neural network (GNN) that predicts scene-dependent interpolation weights for Directional Audio Coding (DirAC) descriptors, while preserving an analytical spatial-audio rendering stage. Attendees can move and rotate a listener on a metric map, reposition the microphone arrays, switch between learned GNN interpolation and a Delaunay baseline, inspect the graph features, and immediately hear the resulting binaural rendering over headphones." />
 
-<meta name="citation_keywords" content="Dereverberation" />
+<meta name="citation_keywords" content="Spatial audio recording and reproduction" />
 
-<meta name="citation_keywords" content="Speech intelligibility enhancement" />
+<meta name="citation_keywords" content="Acoustic sensor networks" />
 
-
-<meta name="citation_pdf_url" content="static/papers/69.pdf" />
-
-<meta id="yt-id" data-name= />
-<meta id="bb-id" data-name= />
 
 
   </head>
@@ -125,7 +124,7 @@
           <ul class="navbar-nav ml-auto">
             
             
-            <li class="nav-item ">
+            <li class="nav-item active">
               <a class="nav-link" href="calendar.html">Schedule</a>
             </li>
             
@@ -161,89 +160,52 @@
       <div class="content">
         
 
-<!-- Title -->
-<div class="pp-card m-3" style="">
+<div class="pp-card m-3">
   <div class="card-header">
-    <h2 class="card-title main-title text-center" style="">
-      P4-13: Dereverberation Using Deep Internal Learning: Speech Enhancement and ASR Evaluation
+    <h2 class="card-title main-title text-center">
+      D02: Interactive Graph-based 6DoF Ambisonic Rendering from Sparse Microphone Arrays
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
-      
-      <a href="papers.html?filter=authors&search=Zhang, Yuxi*" class="text-muted"
-        >Zhang, Yuxi*</a
-      >,
-      
-      <a href="papers.html?filter=authors&search=A. Naylor, Patrick" class="text-muted"
-        >A. Naylor, Patrick</a
-      >
-      
+      Gioele Greco*, Filippo Marri, Mirco Pezzoli, Fabio Antonacci
     </h3>
+    
     <p class="card-text text-center">
-      <span class="">Subjects (starting with primary):</span>
+      <span>Subjects (starting with primary):</span>
       
-      <a
-        href="papers.html?filter=keywords&search=Dereverberation"
-        class="text-secondary text-decoration-none"
-        >Dereverberation</a
-      > ; 
+      <span class="text-secondary">Spatial audio recording and reproduction</span>; 
       
-      <a
-        href="papers.html?filter=keywords&search=Speech intelligibility enhancement"
-        class="text-secondary text-decoration-none"
-        >Speech intelligibility enhancement</a
-      > 
+      <span class="text-secondary">Acoustic sensor networks</span>
       
     </p>
     
+    
     <h4 class="text-muted text-center">
-      Presented in Poster Session 4
+      Presented in Demo Session
     </h4>
     
     
+    <h4 class="text-center">
+      Related paper:
+      <a href="poster_79.html">
+        P3-13:
+        Graph Neural Network for Wide-Area 6DoF Ambisonic Rendering
+      </a>
+    </h4>
+    
+  </div>
+</div>
 
-  </div>
-</div>
-<div style="display: flex; justify-content: center;" class="btn-toolbar mt-4" role="toolbar">
-  <div class="poster-buttons btn-group btn-group-toggle mb-3" data-toggle="buttons">
-    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#details">
-      Abstract
-    </button>
-    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#paper">
-      Paper
-    </button>
-    <!--  -->
-  </div>
-  
-</div>
 <div class="poster-content">
-  <div id="details" class="pp-card m-3 collapse">
+  <div class="pp-card m-3">
     <div class="card-body">
       <div class="card-text">
-        <div id="abstractExample">
-          <span class="font-weight-bold">Abstract:</span>
-          <p>Reverberation degrades both perceptual speech quality and downstream Automatic Speech Recognition (ASR). This paper extends our prior work on Deep Internal Learning (DIL) for single-channel speech dereverberation to a downstream ASR setting. The proposed method trains an utterance-specific multi-scale frequency-band Convolutional Neural Network (CNN) on pseudo pairs derived solely from the reverberant input, requiring neither external data nor pretrained models. We evaluate on LibriSpeech test-clean convolved with measured Room Impulse Responses (RIRs) from three rooms with a wide T60 range, assessing both signal-level and recognition metrics under matched and mismatched degradation-prior configurations. The findings characterise the conditions under which DIL provides reliable ASR benefit and identify prior accuracy as a key determinant of recognition performance.</p>
-        </div>
-      </div>
-      <p></p>
-    </div>
-  </div>
-  <div id="paper" class="collapse">
-    
-    <div class="pp-card m-3">
-      <div class="card-body">
-        <p class="card-text">
-          This PDF is password protected. Enter the proceedings password in the PDF viewer when prompted.
-        </p>
-        <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
-        <iframe class="fullscreen-iframe" src="static/papers/69.pdf#embedded=true" width="100%" height="650px" title="Protected paper PDF" allowfullscreen webkitallowfullscreen></iframe>
+        <span class="font-weight-bold">Abstract:</span>
+        <p>This demonstration presents a real-time, interactive system for wide-area six-degrees-of-freedom (6DoF) Ambisonic rendering from a sparse set of first-order Ambisonic microphone arrays. The system implements a graph neural network (GNN) that predicts scene-dependent interpolation weights for Directional Audio Coding (DirAC) descriptors, while preserving an analytical spatial-audio rendering stage. Attendees can move and rotate a listener on a metric map, reposition the microphone arrays, switch between learned GNN interpolation and a Delaunay baseline, inspect the graph features, and immediately hear the resulting binaural rendering over headphones.</p>
       </div>
     </div>
-    
   </div>
 </div>
 
-
-<script src="static/js/poster.js"></script>
 
       </div>
     </div>
