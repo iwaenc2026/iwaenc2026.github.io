@@ -160,7 +160,7 @@ const updateSession = () => {
     const urlSession = getUrlParameter("session");
     if (urlSession) {
         filters['session'] = urlSession
-        d3.select('#session_name').text(urlSession);
+        d3.select('#session_name').text(sessionDisplayName(urlSession));
         d3.select('.session_notice').classed('d-none', null);
         return true;
     } else {
@@ -296,7 +296,7 @@ const card_time_small = (openreview, show) => {
     <div class="text-center" style="margin-top: 10px;">
     ${cnt.session.filter(s => s.match(/.*[0-9]/g)).map(
       (s, i) => `<a class="card-subtitle text-muted" href="?session=${encodeURIComponent(
-        s)}">${s.replace('Session ', '')}</a> ${card_live(
+        s)}">${sessionDisplayName(s)}</a> ${card_live(
         cnt.session_links[i])} ${card_cal(openreview, i)} `).join(', ')}
     </div>
 <!--    </div>-->

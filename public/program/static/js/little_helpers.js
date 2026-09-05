@@ -12,6 +12,11 @@ function setQueryStringParameter(name, value) {
     window.history.replaceState({}, "", decodeURIComponent(`${window.location.pathname}?${params}`));
 }
 
+function sessionDisplayName(session) {
+    const sessionText = String(session);
+    return /^\d+$/.test(sessionText) ? `Poster Session ${sessionText}` : sessionText;
+}
+
 
 const initTypeAhead = (list, css_sel, name, callback) => {
     const bh = new Bloodhound({
@@ -112,7 +117,7 @@ function populateSessionSelect(sessionArray) {
   for (let i = 0; i < sessionArray.length; i += 1) {
       option = document.createElement('option');
       option.setAttribute('value', sessionArray[i]);
-      option.appendChild(document.createTextNode(sessionArray[i]));
+      option.appendChild(document.createTextNode(sessionDisplayName(sessionArray[i])));
       select.appendChild(option);
   }
 }
