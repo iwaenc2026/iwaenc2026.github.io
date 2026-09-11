@@ -1,0 +1,61 @@
+---
+import { METADATA } from 'astrowind:config';
+import Layout from '~/layouts/PageLayout.astro';
+
+import ImgGallery from '~/components/widgets/Gallery.jsx';
+import Hero from '~/components/widgets/Hero.astro';
+import hero from '~/config/pages/gallery/hero';
+import gallery from '~/config/pages/gallery/gallery';
+
+const metadata = {
+  title: 'Workshop Gallery',
+  description: METADATA.description,
+};
+---
+
+<Layout {metadata}>
+  <!-- Hero Widget ******************* -->
+
+  {
+    hero && hero.enabled && (
+      <Hero
+        tagline={hero.tagline}
+        title={hero.title}
+        subtitle={hero.subtitle}
+        actions={hero.actions}
+      />
+    )
+  }
+
+  <section class="not-prose px-4 sm:px-6 pb-8 md:pb-10">
+    <div class="max-w-5xl mx-auto">
+      <img
+        src="/iwaenc2026.png"
+        alt="IWAENC 2026 gallery hero image"
+        width="5712"
+        height="4284"
+        loading="eager"
+        decoding="async"
+        class="w-full h-auto rounded-md"
+      />
+    </div>
+  </section>
+
+  <section class="not-prose px-4 sm:px-6 pb-12 md:pb-16">
+    <div class="max-w-5xl mx-auto">
+      <img
+        src="/orgcommittee.jpg"
+        alt="IWAENC 2026 organizing committee"
+        width="5712"
+        height="4284"
+        loading="lazy"
+        decoding="async"
+        class="w-full h-auto rounded-md"
+      />
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  {gallery && gallery.enabled && <ImgGallery client:only="react" photos={gallery.photos} layout={gallery.layout} />}
+  <!-- End of Gallery -->
+</Layout>
