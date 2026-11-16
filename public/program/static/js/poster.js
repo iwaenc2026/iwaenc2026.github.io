@@ -1,10 +1,14 @@
 $('.poster-buttons button').on('click', function() {
   var target = $(this).attr('data-target');
-  $(this).siblings().removeClass('active');
-  if ($(target).hasClass('show')) {
-    $(target).addClass('show');
-  } else {
-    $('.collapse.show').removeClass('show');
+  $(this).addClass('active').siblings().removeClass('active');
+  $('.poster-content > .collapse').not(target).removeClass('show');
+  $(target).addClass('show');
+
+  if (target === '#paper') {
+    var frame = $(target).find('.fullscreen-iframe')[0];
+    if (frame && !frame.hasAttribute('src') && frame.clientWidth > 0) {
+      frame.src = frame.getAttribute('data-src');
+    }
   }
 });
 

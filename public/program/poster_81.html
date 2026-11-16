@@ -210,11 +210,11 @@
   </div>
 </div>
 <div style="display: flex; justify-content: center;" class="btn-toolbar mt-4" role="toolbar">
-  <div class="poster-buttons btn-group btn-group-toggle mb-3" data-toggle="buttons">
-    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#details">
+  <div class="poster-buttons btn-group btn-group-toggle mb-3">
+    <button class="card-link btn btn-outline-primary" type="button" data-target="#details">
       Abstract
     </button>
-    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#paper">
+    <button class="card-link btn btn-outline-primary" type="button" data-target="#paper">
       Paper
     </button>
     <!--  -->
@@ -237,11 +237,8 @@
     
     <div class="pp-card m-3">
       <div class="card-body">
-        <p class="card-text">
-          This PDF is password protected. Enter the proceedings password in the PDF viewer when prompted.
-        </p>
         <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
-        <iframe class="fullscreen-iframe" src="static/papers/81.pdf#embedded=true" width="100%" height="650px" title="Protected paper PDF" allowfullscreen webkitallowfullscreen></iframe>
+        <iframe class="fullscreen-iframe" data-src="static/papers/81.pdf#page=1&amp;view=FitH&amp;navpanes=0" width="100%" height="650px" title="Paper PDF" allowfullscreen webkitallowfullscreen></iframe>
       </div>
     </div>
     
